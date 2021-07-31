@@ -1,0 +1,26 @@
+{
+	"name" : "XP Briefings",
+	"description" : "Replaces mission briefings with XP objectives and estimated XP Per Minute, adds an XPM sort to Contract Broker",
+	"author" : "Buurazu",
+	"contact" : "Discord: Buurazu#8042",
+	"version" : "1.0",
+	"blt_version" : 2,
+	"image" : "buurazu.png",
+	"color" : "0.8 0 0",
+	"updates": [{
+		"identifier": "xp-briefings",
+		"host": {
+			"meta": "https://raw.githubusercontent.com/Buurazu/XP-Briefings/main/meta.json"
+		}
+	}],
+	"hooks" : [
+		{   
+			"hook_id" : "lib/managers/localizationmanager",
+			"script_path" : "XPbriefings.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/contractbrokergui",
+			"script_path" : "contractbrokerXPM.lua"
+		}
+	]
+}
