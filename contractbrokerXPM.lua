@@ -47,8 +47,8 @@ function ContractBrokerGui.perform_xpm_sort(x, y)
 	local xpm_y = string_y:sub(6,10)
 	
 	--check if our substring begins with the number 1 through 9
-	local isnumber_x = (xpm_x:byte(1) >= 49 and xpm_x:byte(1) <= 57)
-	local isnumber_y = (xpm_y:byte(1) >= 49 and xpm_y:byte(1) <= 57)
+	local isnumber_x = xpm_x:byte(1) ~= nil and (xpm_x:byte(1) >= 49 and xpm_x:byte(1) <= 57)
+	local isnumber_y = xpm_y:byte(1) ~= nil and (xpm_y:byte(1) >= 49 and xpm_y:byte(1) <= 57)
 	
 	--ideally I make every briefing be a number, but for ones I didn't, or new heists, keep them at the bottom of the list
 	if (not isnumber_x and not isnumber_y) then return ContractBrokerGui.perform_standard_sort(x, y)

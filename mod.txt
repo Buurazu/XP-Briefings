@@ -3,7 +3,7 @@
 	"description" : "Replaces mission briefings with XP objectives and estimated XP Per Minute, adds an XPM sort to Contract Broker",
 	"author" : "Buurazu",
 	"contact" : "Discord: Buurazu#8042",
-	"version" : "1.0",
+	"version" : "1.1",
 	"blt_version" : 2,
 	"image" : "buurazu.png",
 	"color" : "0.8 0 0",

@@ -1,15 +1,16 @@
 --All XPMs are based on a clean run, usually on Mayhem/DW for Loud and DSOD for Stealth
 --Luck-based and high-skill (goat wrangling) objectives and stealth skill / ECM rushing can make it vary wildly but they should serve as a good rough expectation
+--Keep in mind that due to doing them on Death Sentence, Stealth missions have a better XP multiplier, plus potential Stealth bonuses
+--But of course, they also tend to need more restarting!
 
---TODO: Art Gallery/Framing Frame loud?, Big Bank loud / C4 stealth?, Election Day variants?, more murky station
+--TODO: Framing Frame Day 3 loud, Big Bank loud (confirm 30000), barebones murky station, more White Xmas (Short if RNG permits)
 
-
-artgallery = [[XPM: 3,250 (Stealth in 2)
+artgallery = [[XPM: 3,250 (2 minutes)
 » 2,000 on completion
-» +6,000 on security hack completion
+» +6,000 on security hack completion (5 minutes; 1,200 XPM)
 » +500 per painting secured]]
 
-bankheist = [[XPM: 2,000 (Stealth in 6)
+bankheist = [[XPM: 2,000 (6 minutes)
 » 12,000 on completion]]
 
 carshop = [[XPM: 1,600 - 2,000 (6 minutes)
@@ -19,7 +20,7 @@ carshop = [[XPM: 1,600 - 2,000 (6 minutes)
 cookoff = [[XPM: 2,700
 » +8,000 per secured bag]]
 
-diamondstore = [[XPM: 5,000+ (Stealth in 4)
+diamondstore = [[XPM: 5,000+ (Stealth in 4 or less)
 » 2,000 on completion
 » +1,000 per secured bag]]
 
@@ -43,7 +44,7 @@ counterfeit = [[XPM: 1,900
 » +4,000 per printed bundle of money
 » +1,000 per secured bag in the heli cage]]
 
-gobank = [[XPM: 2,500 - 3,000 (Stealth), 1,800 (Loud)
+gobank = [[XPM: 2,500 - 3,000 (Stealth), 1,800 (Loud in 10)
 » Stealth: 8,000 total
 » Loud: 12,000 total
 » +1,000 per secured lootbag
@@ -79,26 +80,26 @@ trainheist = [[XPM: 2,400 (Loud/Stealth in 15)
 » 20,000 total
 » +800 per secured ammo bag]]
 
-firstworldbank = [[XPM: 2,600 (Either)
+firstworldbank = [[XPM: 2,750 (Stealth in 10), 2,600 (Loud in 13)
 » Stealth: 13,500 total
 » Loud: 20,000 total
 » +1,000 per secured money bag
 » +40,000 on entering the Overvault
 » +143 per secured gold bag]]
 
-greenbridge = [[XPM: 2,200
+greenbridge = [[XPM: 2,200 (11 minutes)
 » 24,000 total
 » +1,000 per secured bag]]
 
-heatstreet = [[XPM: 2,200
+heatstreet = [[XPM: 2,200 (12 minutes)
 » 26,000 total]]
 
-panicroom = [[XPM: 1,500 - 2,000
+panicroom = [[XPM: 1,500 - 2,000 (Sniper/Roof Objectives Are Pain)
 » 25,000 total
 » +1,000 for securing toothbrush
 » +500 per secured bag of coke]]
 
-slaughterhouse = [[XPM: 3,000
+slaughterhouse = [[XPM: 3,000 (13.33 minutes)
 » 32,000 total
 » +800 per secured gold bag]]
 
@@ -115,32 +116,36 @@ labrats = [[XPM: 1,000 - 2,000+ (high skill ceiling)
 » +2,000 per meth batch bagged
 » +500 per secured bag]]
 
-prisonnightmare = [[XPM: 1,800 - 2,400
-» 14,000 total
-» +850 per secured bag]]
+--15 keycard mayhem run: 137250 in 50 minutes
+--test an instant leave, 14000/5?
+prisonnightmare = [[XPM: 2,500 - 2,800+ (high skill ceiling)
+» 14,000 total (XPM: 2,500 in 5.5)
+» +850 per secured bag
+» About 3 minutes per loop]]
 
 safehousenightmare = [[XPM: 1,500
 » 10,000 on completion]]
 
 firestarter1 = [[XPM: 3,000
 
-Day 1 XPM: 4,000
+Day 1 XPM: 4,000 (4 minutes)
 » 8,000/10,000 on escape with weapon destroyed/no weapons destroyed
 » +6,000 for securing all weapons]]
-firestarter2 = [[Day 2 XPM: 3,000 - 4,000
+firestarter2 = [[Day 2 XPM: 3,000 - 4,000 (Stealth in 2 or 3)
 » 6,000/12,000/10,000 on escape under 3 mins/stealth after 3 /loud after 3]]
-firestarter3 = [[Day 3 XPM: 2,000
+firestarter3 = [[Day 3 XPM: 2,000 (8 minutes)
 » 16,000 on completion]]
 
+--4 bags in 14 min, 5 in 17:15, 7 in 26
 rats1 = [[XPM: 3,000 - 3,200
 
-Day 1 XPM: 2,600 - 2,800
+Day 1 XPM: 2,600 - 2,800 (RNG)
 » 12,000/30,000/70,000 on escape with 0/3/7 bags]]
-rats2 = [[Day 2 XPM: 5,000 - 6,000
+rats2 = [[Day 2 XPM: 5,000 - 6,000 (1.67 to 2 minutes)
 » 4,000/6,000/10,000 on escape with no intel/intel/intel + all meth]]
-rats3 = [[Day 3 XPM: 5,000
+rats3 = [[Day 3 XPM: 4,500 (3.5 minutes)
 » 2,000 on completion
-» +14,000 on securing all money]]
+» +14,000 on securing all money (do not miss the throws!)]]
 
 watchdogs1 = [[XPM: 2,500
 
@@ -157,7 +162,7 @@ boilingpoint = [[XPM: 2,500
 » 26,000 total
 » +5,000 per scan (about 2 minutes each)]]
 
-murkystation = [[XPM: 2,400+
+murkystation = [[XPM: 3,000+ (4 Vaults in 12)
 » 8,000 total
 » +2,000 per train car fully opened
 » +1,000 per pickup found for the first time
@@ -181,7 +186,7 @@ brooklynbank = [[XPM: 2,250
 » 16,000 total
 » +400 per bag secured]]
 
-henrysrock = [[XPM: 3,500+
+henrysrock = [[XPM: 3,200 - 3,500
 » 16,000 total
 » +8,000 for archaeology
 » +6,000 for biolab
@@ -190,7 +195,7 @@ henrysrock = [[XPM: 3,500+
 » +2,000 on finishing crane objective
 » +2,000 per non-box bag secured]]
 
-shacklethorneauction = [[XPM: 3,000 (Loud, or Stealth in 5)
+shacklethorneauction = [[XPM: 3,000 (Loud in 8.5, Stealth in 5)
 » Stealth: 15,000 total
 » Loud: 26,000 total]]
 
@@ -213,7 +218,7 @@ brooklyn1010 = [[XPM: 2,800
 » 26,000 total
 » +1,000 per secured bag]]
 
-theyachtheist = [[XPM: 1,000 - 2,000
+theyachtheist = [[XPM: 2,000 (Stealth in 6)
 » 4,000 on completion
 » +1,000 per secured money bag]]
 
@@ -248,13 +253,13 @@ hoxtonrevenge = [[XPM: 2,200 (Either in 10)
 16,000 total
 +1,000 per secured bag]]
 
---try big bank loud again?
---73000 with 20 bags C4 escape 12 mins?
---63000 20 bags 12 mins
-bigbank = [[XPM: 5,000+ (Stealth+Bus in 15), 3,000+ (Loud)
+--try big bank loud again? make sure its only 30000 base?
+--73000 with 23 bags bus escape 12 mins?
+--63000 23 bags 12 mins
+bigbank = [[XPM: 5,000+ (Stealth in 12, Stealth+Bus in 15), 3,000+ (Loud in 18)
 » 30,000 total
-» +10,000 for initiating a stealth escape? (not listed on wiki)
-» +10,000 for initiating a stealth AND loud escape? (Bus Escape after Stealth)
+» +10,000 for initiating a stealth escape (not listed on wiki?)
+» +10,000 for initiating a stealth AND loud escape (Bus Escape after Stealth)
 » +1,000 per secured bag]]
 
 thediamond = [[XPM: 2,900 (Loud), 1,800+ (Stealth in 10)
@@ -270,24 +275,23 @@ Day 1 XPM: 3,000
 bigoil2 = [[Day 2 XPM: 1,900 (ASAP Server Room)
 » 21,000 total]]
 
-electionday1 = [[XPM: 2,500 (Plan A Stealth)
+electionday1 = [[XPM: 2,800 (Plan A Stealth in 3.5)
 
-Day 1 XPM: 2,000
+Day 1 XPM: 2,000 (Stealth in 1 or 3), 2,200 (Loud in 11)
 » 2,000/6,000/12,000 on escape under 3 minutes/over 3 minutes/hack completed
 » +12,000 on loud escape if second hack finished]]
-electionday2a = [[Day 2A XPM: 2,800 - 3,200
+electionday2a = [[Day 2A XPM: 3,200 (Stealth in 2.5), 2,800 (Stealth in 5)
 » 8,000/14,000/18,000 on stealth under 5 minutes/over 5 minutes/loud escape]]
-electionday2b = [[Day 2B XPM: 1,600 - 2,000
+electionday2b = [[Day 2B XPM: 2,300 (Loud in 8.5)
 » 20,000 on completion]]
 
 framingframe1 = [[XPM: 2,800 (Stealth)
 
-Day 1 XPM: 3,250 (Stealth in 2)
+Day 1 XPM: 3,250 (2 minutes)
 » 2,000 on completion (+6,000 for security hack)
 » +500 per painting secured]]
-framingframe2 = [[Day 2 XPM: 2,100 (Stealth in 3)
-» 2,000 on completion
-» +500 per bag secured]]
+framingframe2 = [[Day 2 XPM: 2,100 (3 minutes)
+» 2,000 on completion (+500 per bag secured)]]
 framingframe3 = [[Day 3 XPM: 2,700 (Stealth in 7)
 » Stealth: 11,500 total (+1,000 per gold secured)
 » Loud: 24,000 total]]
@@ -306,7 +310,7 @@ aftershock = [[XPM: 2,500 - 2,800
 » 28,000 total
 » +500 per secured safe]]
 
-fourstores = [[XPM: 1,200 - 1,500
+fourstores = [[XPM: 1,200 - 1,500 (3,400 on Overkill)
 » 6,000 on completion]]
 
 goatsimulator1 = [[XPM: 2,000 - 2,500
@@ -334,11 +338,12 @@ nightclub = [[XPM: 1,000
 » 8,000 on loud escape
 » 12,000 on loud escape if no C4 was used]]
 
-santasworkshop = [[XPM: 3,100
+santasworkshop = [[XPM: 3,100 - 3,300
 » 4,000 on completion
 » +12,000 - 16,000 on safe event completed
 » +1,000 per finished present (approx. 4 per 2.5 minutes)
-» +1,000 per secured present]]
+» +1,000 per secured present (none from safe's bags)
+» The best endless heist!]]
 
 stealingxmas = [[XPM: 2,100
 » 4,000 total
@@ -353,24 +358,28 @@ stealingxmas = [[XPM: 2,100
 
 
 
-ukrainianjob = [[XPM: 2,500 - 2,800
+ukrainianjob = [[XPM: 2,500 (Stealth in 4)
 » 4,000 on completion (under 2 minutes)
 » 10,000 on completion (over 2 minutes)]]
 
-whitexmas = [[XPM: 3,000
+--40,000 in 12: 3333
+--test getting the lumberyard escape point for a true ASAP leave
+--any other escape point requires multiple trips to move all initial bags
+whitexmas = [[XPM: 3,300+ (leave ASAP), 3,000 (infinite)
 » 8,000 on completion
 » +2,000 per secured bag
-» Doesn't get better over time; the initial presents are best XPM]]
+» Doesn't get better over time; the initial present spawns are best]]
 
-safehouseraid = [[XPM: 2,600
-» +14,000 per completed wave]]
+safehouseraid = [[XPM: 2,600+ (16 minutes)
+» +14,000 per completed wave
+» Waves end based on kill count rather than time? More research needed]]
 
 alaskandeal = [[XPM: 2,200
 » 14,000 total
 » +400 per secured money bag
 » +600 per secured weapon bag]]
 
-diamondheist = [[XPM: 1,700 (Loud), 1,200 - 1,500 (Stealth)
+diamondheist = [[XPM: 1,700 (Loud, or Stealth in 7)
 » Stealth: 12,200 total
 » Loud: 19,200 total
 » +2,000 for securing the red diamond]]
@@ -613,7 +622,7 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings", function(loc)
 	heist_flat_crimenet = panicroom,
 	heist_flat_hl_briefing = panicroom,
 	heist_help_crimenet = prisonnightmare,
-	heist_help_briefing = prisonnightmare,
+	heist_help_hl_briefing = prisonnightmare,
 	menu_skirmish_selected_briefing = holdout,
 	heist_skm_random_briefing = holdout,
 	
