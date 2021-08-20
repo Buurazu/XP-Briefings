@@ -3,349 +3,279 @@
 --Keep in mind that due to doing them on Death Sentence, Stealth missions have a better XP multiplier, plus potential Stealth bonuses
 --But of course, they also tend to need more restarting!
 
---TODO: Framing Frame Day 3 loud, Big Bank loud (confirm 30000), barebones murky station, more White Xmas (Short if RNG permits)
+--TODO: Framing Frame Day 3 loud, barebones white xmas
+--keep adding Loud lengths
+--keep adding "max" bag counts
+--buluc's mansion still has question marks
 
+
+--escape XPM varies greatly based on required bags and escape vehicle RNG so they don't really have one
+escapeoverpass = [[
+» 8,000 on completion]]
+escapegarage = [[
+» 4,000 on completion]]
+escapecafe = [[
+» 6,000 on completion]]
+escapepark = [[
+» 8,000 on completion]]
+escapestreet = [[
+» 3,000 on completion]]
+
+--done
 artgallery = [[XPM: 3,250 (2 minutes)
 » 2,000 on completion
 » +6,000 on security hack completion (5 minutes; 1,200 XPM)
-» +500 per painting secured]]
-
+» +500 per painting secured (max 9; +4,500)]]
+--done
 bankheist = [[XPM: 2,000 (6 minutes)
 » 12,000 on completion]]
-
+--done
 carshop = [[XPM: 1,600 - 2,000 (6 minutes)
 » 9,000 total
-» +1,000 per secured car]]
-
+» +1,000 per secured car (max 4; +4,000)]]
+--done
+--average forced delay = 135 seconds = 2:15 minutes, but add ingredient adding time + bagging time of 45 seconds
 cookoff = [[XPM: 2,700
-» +8,000 per secured bag]]
-
+» +8,000 per secured bag (about 3 minutes each)
+» Prompt check: 20 to 25 sec, Chance: 7%+15% each fail, resets to 7% each bag]]
+--done
 diamondstore = [[XPM: 5,000+ (Stealth in 4 or less)
 » 2,000 on completion
-» +1,000 per secured bag]]
-
-jewelrystore = [[XPM: 1,400 (Stealth in 4.25)
+» +1,000 per secured bag (18 in store; +18,000)]]
+--done
+jewelrystore = [[XPM: 1,400 (Stealth in 4:15)
 » 2,000 on completion (under 2 minutes)
 » 6,000 on completion (over 2 minutes)
 » 8,000 on completion (loud)]]
-
-reservoirdogs2 = [[XPM: 2,500
-
-Day 2 XPM: 2,000
-» 8,000 total
-» +1,500 per storage unit opened
-» +1,000 per secured bag]]
-reservoirdogs1 = [[Day 1 XPM: 2,900
-» 20,000 total
-» +500 per secured bag]]
-
-counterfeit = [[XPM: 1,900
-» 23,000 total
-» +4,000 per printed bundle of money
-» +1,000 per secured bag in the heli cage]]
-
-gobank = [[XPM: 2,500 - 3,000 (Stealth), 1,800 (Loud in 10)
-» Stealth: 8,000 total
-» Loud: 12,000 total
-» +1,000 per secured lootbag
-» +500 per answered phone call]]
-
-
---14,000 in 12 minutes solo no armor DSOD
---22,000 13 mins cleaned out
---22,000 12 mins
---12 bags 6 mins
-shadowraid = [[XPM: 2,200++ (Armor in 10) (high variance)
-» +4,000 on completion without escape timer
-» +6,000 on securing samurai armor
-» +4,000 on securing 3 bags
-» +500 per secured bag (up to 16 times)]]
-
-
---solo 30 minutes, lets call it 20, 44500
---51600 loud 20 minutes
-alesso = [[XPM: 2,600 (Loud/Stealth in 20)
-» 15,000 total
-» +1,000 / +2,000 on C4 pickup in loud/stealth
-» +1,200 / +1,500 on securing bag in loud/stealth
-» +10,000 on security hack finished]]
-
-
-transport = [[XPM: 3,500 (C4), 2,400 (no C4)
+--done
+transport = [[XPM: 3,500 (C4 in 3:30), 2,400 (no C4 in 5)
 » 12,000 on completion]]
-
---4.5 mins per vault loud
---36000 in 15 mins
-trainheist = [[XPM: 2,400 (Loud/Stealth in 15)
+--4:30 mins per vault loud
+--done
+trainheist = [[XPM: 2,400 (Either in 15)
 » 20,000 total
-» +800 per secured ammo bag]]
-
-firstworldbank = [[XPM: 2,750 (Stealth in 10), 2,600 (Loud in 13)
+» +800 per secured ammo bag (max 20; +16,000)]]
+--max loud xp: 51,600
+--max stealth amount 52,000, takes about 20 mins either way
+--done
+alesso = [[XPM: 2,600 (Either in 20)
+» 15,000 total
+» +1,000/+2,000 on C4 pickup in loud/stealth (+5,000/+10,000)
+» +1,200/+1,500 on securing bag in loud/stealth (max +21,600/+27,000)
+» +10,000 on security hack finished]]
+--done
+firstworldbank = [[XPM: 3,000 (Stealth in 9), 2,600 (Loud in 13)
 » Stealth: 13,500 total
 » Loud: 20,000 total
-» +1,000 per secured money bag
-» +40,000 on entering the Overvault
-» +143 per secured gold bag]]
-
-greenbridge = [[XPM: 2,200 (11 minutes)
-» 24,000 total
-» +1,000 per secured bag]]
-
+» +1,000 per secured money bag (max 14; +14,000)
+» +40,000 on entering the Overvault (33:20; 1,200 XPM)
+» +143 per secured gold bag (max 70; +10,010)]]
+--done
 heatstreet = [[XPM: 2,200 (12 minutes)
 » 26,000 total]]
-
-panicroom = [[XPM: 1,500 - 2,000 (Sniper/Roof Objectives Are Pain)
-» 25,000 total
-» +1,000 for securing toothbrush
-» +500 per secured bag of coke]]
-
-slaughterhouse = [[XPM: 3,000 (13.33 minutes)
+--done
+slaughterhouse = [[XPM: 3,000 (13:20 minutes)
 » 32,000 total
-» +800 per secured gold bag]]
-
-undercover = [[XPM: 2,200
+» +800 per secured gold bag (max 10; +8,000)]]
+--done
+undercover = [[XPM: 2,200 (12 minutes)
 » 24,500 total
 » +1,000 for confirming server (not worth it)
-» +1,000 per power failure? (up to 3 times)]]
-
-labrats = [[XPM: 1,000 - 2,000+ (high skill ceiling)
-» 5,000 on completion
-» +30,000/22,500/15,000 upon opening safe
-» +1,000 upon adding cooking ingredient
-» +2,000 upon adding ephedrine
-» +2,000 per meth batch bagged
-» +500 per secured bag]]
-
---15 keycard mayhem run: 137250 in 50 minutes
---test an instant leave, 14000/5?
-prisonnightmare = [[XPM: 2,500 - 2,800+ (high skill ceiling)
-» 14,000 total (XPM: 2,500 in 5.5)
-» +850 per secured bag
-» About 3 minutes per loop]]
-
-safehousenightmare = [[XPM: 1,500
+» +1,000 per power failure (up to 3 times)]]
+--done
+safehousenightmare = [[XPM: 1,500 (6:40 minutes)
 » 10,000 on completion]]
-
-firestarter1 = [[XPM: 3,000
-
-Day 1 XPM: 4,000 (4 minutes)
-» 8,000/10,000 on escape with weapon destroyed/no weapons destroyed
-» +6,000 for securing all weapons]]
-firestarter2 = [[Day 2 XPM: 3,000 - 4,000 (Stealth in 2 or 3)
-» 6,000/12,000/10,000 on escape under 3 mins/stealth after 3 /loud after 3]]
-firestarter3 = [[Day 3 XPM: 2,000 (8 minutes)
-» 16,000 on completion]]
-
---4 bags in 14 min, 5 in 17:15, 7 in 26
-rats1 = [[XPM: 3,000 - 3,200
-
-Day 1 XPM: 2,600 - 2,800 (RNG)
-» 12,000/30,000/70,000 on escape with 0/3/7 bags]]
-rats2 = [[Day 2 XPM: 5,000 - 6,000 (1.67 to 2 minutes)
-» 4,000/6,000/10,000 on escape with no intel/intel/intel + all meth]]
-rats3 = [[Day 3 XPM: 4,500 (3.5 minutes)
-» 2,000 on completion
-» +14,000 on securing all money (do not miss the throws!)]]
-
-watchdogs1 = [[XPM: 2,500
-
-Day 1 XPM: 2,500
-» 12,000 total
-» +2,000 on helicopter escape
-» +2,000 on securing all bags]]
-watchdogs2 = [[Day 2 XPM: 2,500
-» 12,000 total
-» +1,500 on securing each bag after #3]]
-
-
-boilingpoint = [[XPM: 2,500
-» 26,000 total
-» +5,000 per scan (about 2 minutes each)]]
-
-murkystation = [[XPM: 3,000+ (4 Vaults in 12)
+--done
+birthofsky = [[XPM: 3,100 (10 minutes)
+» 31,100 total]]
+--done
+murkystation = [[XPM: 3,500+ (Bomb in 4, All in 9)
 » 8,000 total
 » +2,000 per train car fully opened
 » +1,000 per pickup found for the first time
-» +1,000 per weapon bag secured]]
-
-
-beneaththemountain = [[XPM: 1,800
-» 19,000 total
-» +1,000 per loot vault opened
-» +700 per bag secured]]
-
-birthofsky = [[XPM: 3,100
-» 31,100 total]]
-
-breakinfeds = [[XPM: 1,500 - 2,000
-» 6,000 total
-» +4,000 per lure
-» +1,000 per bag secured (includes box)]]
-
-brooklynbank = [[XPM: 2,250
-» 16,000 total
-» +400 per bag secured]]
-
-henrysrock = [[XPM: 3,200 - 3,500
+» +1,000 per weapon bag secured (12 in vaults, 2 in basement; +14,000)]]
+--done
+henrysrock = [[XPM: 3,200 - 3,600 (11 minutes)
 » 16,000 total
 » +8,000 for archaeology
 » +6,000 for biolab
 » +8,000 for weapons lab (laser)
 » +2,000 per finished hack (crane objective)
 » +2,000 on finishing crane objective
-» +2,000 per non-box bag secured]]
-
-shacklethorneauction = [[XPM: 3,000 (Loud in 8.5, Stealth in 5)
+» +2,000 per additional bag secured (max 6; +12,000)]]
+--done
+gobank = [[XPM: 2,500 - 3,000 (Stealth in 6), 1,800 (Loud in 10)
+» Stealth: 8,000 total
+» Loud: 12,000 total
+» +1,000 per secured lootbag (max 8 to 10; +8,000-10,000)
+» +500 per answered phone call]]
+--done
+shacklethorneauction = [[XPM: 3,000 (Loud in 8:30, Stealth in 5)
 » Stealth: 15,000 total
 » Loud: 26,000 total]]
-
-scarfacemansion = [[XPM: 2,000 (Loud, or Stealth in 12)
+--done
+scarfacemansion = [[XPM: 2,500 (Stealth in 12), 2,000 (Loud in 16)
 » Stealth: 21,000 total
 » Loud: 24,000 total
-» +500 per secured bag]]
-
-thebombdockyard = [[XPM: 2,000 (Stealth in 9), 1,600 (Loud)
-» Stealth: 16,000 total
-» Loud: 24,000 total
-» +500 per secured bag]]
-
-thebombforest = [[XPM: 3,100
-» 38,000 total
-» +1,500 per additional bag
-» Heli Escape recommended]]
-
-brooklyn1010 = [[XPM: 2,800
-» 26,000 total
-» +1,000 per secured bag]]
-
+» +500 per secured bag (max 16; +8,000)]]
+--done
+aftershock = [[XPM: 2,500 (Loud in 13:30)
+» 28,000 total
+» +500 per secured safe (12 on Mayhem+; +6,000)]]
+--done
+fourstores = [[XPM: 1,200 - 1,500 (4-5 minutes) (3,400 in 1:45 on Overkill)
+» 6,000 on completion]]
+--done
 theyachtheist = [[XPM: 2,000 (Stealth in 6)
 » 4,000 on completion
-» +1,000 per secured money bag]]
+» +1,000 per secured money bag (8 required; +8,000)]]
+--done
+ukrainianprisoner = [[XPM: 2,800+ (Either in 15)
+» Stealth: 41,500 total
+» Loud: 40,000 total
+» +500 per secured bag (10 in secret area; +5,000)]]
+--done
+hoxtonbreakout1 = [[XPM: 2,300 (23 minutes)
 
-goldengrincasino = [[XPM: 3,900 (Loud, or Stealth in 10)
-» Stealth: 39,250 total
-» Loud (C4 Entry): 44,250 total
-» Loud: 59,250 total
-» No additional loot bonus!
-» Get the fireworks going and skylight hacked ASAP!]]
-
-hotlinemiami1 = [[XPM: 2,300 (with Drill Upgrades)
-
-Day 1: 2,600 XPM
-» 26,000 total
-» +500 per meth cooked
-» +1,000 per secured bag]]
-hotlinemiami2 = [[Day 2: 2,100 XPM
-» 14,000 total
-» +2,000 for defusing C4 on chair
-» +1,000 per secured bag (max 10)]]
-
-hoxtonbreakout1 = [[XPM: 2,300
-
-Day 1 XPM: 2,300
+Day 1 XPM: 2,300 (8 minutes)
 » 18,000 total
 » +200 per cleared obstacle]]
-hoxtonbreakout2 = [[Day 2 XPM: 2,300
+hoxtonbreakout2 = [[Day 2 XPM: 2,300 (15 minutes)
 » 34,000 total
 » +4,000 if no keycard used]]
-
-hoxtonrevenge = [[XPM: 2,200 (Either in 10)
-16,000 total
-+1,000 per secured bag]]
-
---try big bank loud again? make sure its only 30000 base?
---73000 with 23 bags bus escape 12 mins?
+--73000 with 23 bags bus escape 12 mins
 --63000 23 bags 12 mins
-bigbank = [[XPM: 5,000+ (Stealth in 12, Stealth+Bus in 15), 3,000+ (Loud in 18)
+--done
+bigbank = [[XPM: 5,000+ (Stealth in 12, Stealth+Bus in 15), 3,000+ (Loud in 15)
 » 30,000 total
-» +10,000 for initiating a stealth escape (not listed on wiki?)
+» +10,000 for initiating a stealth escape
 » +10,000 for initiating a stealth AND loud escape (Bus Escape after Stealth)
-» +1,000 per secured bag]]
+» +1,000 per secured bag (15 in vault, 6-10 in boxes; +15,000-25,000)
+» Thermite takes 5 minutes, Beast takes around 7
+» Poisoned Cake in Vault area = 4 roamer guards in vault]]
+--4:30, 9:20, 14:15
+--done
+safehouseraid = [[XPM: 2,600 - 3,000 (14-16 minutes)
+» +14,000 per completed wave]]
+--done
+hellsisland = [[XPM: 1,600 (11 minutes)
+» 18,000 total]]
+--done
+sanmartinbank = [[XPM: 2,100 (Loud in 15), 1,500 (Stealth in 10)
+» Stealth: 12,000 - 20,000 total (8,000 from Manager sequence)
+» Loud: 32,000 total (use Vlad entry)]]
+--done
+whitehouse = [[XPM: 2,000 (Stealth in 15, or Loud in 20)
+» Stealth: 31,000 total
+» Loud: 40,000 total]]
+--done
+breakfastintijuana = [[XPM: 2,200 (Loud in 12, or Stealth in 10)
+» Stealth: 22,000 total
+» Loud: 26,000 total]]
+--done
+hoxtonrevenge = [[XPM: 2,200 - 2,400 (10 minutes)
+» 16,000 total
+» +1,000 per secured evidence (max 8; +8,000)]]
+--25200 in 11.5 solo; quicker interactions help so call it 12
+--done
+beneaththemountain = [[XPM: 2,100 (12 minutes)
+» 19,000 total
+» +1,000 per loot vault opened (1 minute each; not worth it)
+» +700 per bag secured (max 4 from vaults, 6 in end area; +7,000)]]
+--done
+bigoil1 = [[XPM: 2,000 - 2,200 (16 minutes)
 
-thediamond = [[XPM: 2,900 (Loud), 1,800+ (Stealth in 10)
-» Stealth: 17,000 total
-» Loud: 28,000 total
-» +1,000 per extra secured bag]]
-
-bigoil1 = [[XPM: 2,000
-
-Day 1 XPM: 3,000
+Day 1 XPM: 2,400 - 3,000 (5 minutes)
 » 12,000 total
 » +1,500 per INTEL picked up (not keycard)]]
-bigoil2 = [[Day 2 XPM: 1,900 (ASAP Server Room)
+bigoil2 = [[Day 2 XPM: 1,900 (11 minutes)
 » 21,000 total]]
-
-electionday1 = [[XPM: 2,800 (Plan A Stealth in 3.5)
+--done
+electionday1 = [[XPM: 2,800 (Plan A Stealth in 3:30)
 
 Day 1 XPM: 2,000 (Stealth in 1 or 3), 2,200 (Loud in 11)
 » 2,000/6,000/12,000 on escape under 3 minutes/over 3 minutes/hack completed
 » +12,000 on loud escape if second hack finished]]
-electionday2a = [[Day 2A XPM: 3,200 (Stealth in 2.5), 2,800 (Stealth in 5)
+electionday2a = [[Day 2A XPM: 3,200 (Stealth in 2:30), 2,800 (Stealth in 5)
 » 8,000/14,000/18,000 on stealth under 5 minutes/over 5 minutes/loud escape]]
-electionday2b = [[Day 2B XPM: 2,300 (Loud in 8.5)
+electionday2b = [[Day 2B XPM: 2,300 (Loud in 8:30)
 » 20,000 on completion]]
-
-framingframe1 = [[XPM: 2,800 (Stealth)
-
-Day 1 XPM: 3,250 (2 minutes)
-» 2,000 on completion (+6,000 for security hack)
-» +500 per painting secured]]
-framingframe2 = [[Day 2 XPM: 2,100 (3 minutes)
-» 2,000 on completion (+500 per bag secured)]]
-framingframe3 = [[Day 3 XPM: 2,700 (Stealth in 7)
-» Stealth: 11,500 total (+1,000 per gold secured)
-» Loud: 24,000 total]]
-
-thebikerheist1 = [[XPM: 2,800 - 3,400
-
-Day 1 XPM: 2,400 - 3,000
-» 14,500 total
-» +7,000 - 18,000 from objectives
-» +500 per secured bag]]
-thebikerheist2 = [[Day 2 XPM: 5,000+
-» 10,000 total
-» +500 per secured bag]]
-
-aftershock = [[XPM: 2,500 - 2,800
-» 28,000 total
-» +500 per secured safe]]
-
-fourstores = [[XPM: 1,200 - 1,500 (3,400 on Overkill)
-» 6,000 on completion]]
-
-goatsimulator1 = [[XPM: 2,000 - 2,500
-
-Day 1 XPM: 2,500 - 4,000 (high skill ceiling)
-» 3,000 on start
-» +1,500 on drilling store/saw finished/powerbox hacked/debris removed
-» +1,500 per secured goat]]
-goatsimulator2 = [[Day 2 XPM: 1,600 - 2,000
-» 21,000 total
-» +500 per secured goat
-» +1,000 per cage
-» +50,000 for Farmer Miserable]]
-
-mallcrasher = [[XPM: 1,500 - 2,000
+--done
+mallcrasher = [[XPM: 1,500 - 2,000 (3 to 4 minutes)
 » 6,000 total]]
-
-meltdown = [[XPM: 2,300 (Loud in 10)
-» 20,000 total
-» +2,000 on securing all non-nuke loot bags
-» +1,500 per secured non-nuke loot bag]]
-
-nightclub = [[XPM: 1,000
+--done
+ukrainianjob = [[XPM: 2,500 (4 minutes) (8,000 in 0:30 on Overkill)
+» 4,000 on completion (under 2 minutes)
+» 10,000 on completion (over 2 minutes)]]
+--done
+alaskandeal = [[XPM: 2,200 (8 minutes)
+» 14,000 total
+» +400 per secured money bag (max 4; +1,600)
+» +600 per secured weapon bag (max 4; +2,400)]]
+--done
+bordercrystals = [[XPM: 2,400
+» 1,000 on completion
+» +6,000 per secured bag (about 2:30 each)
+» 15 sec prompt 1 delay, 45 sec prompt 2 and 3 delay, 15 sec bagging delay]]
+--done
+bordercrossing = [[XPM: 1,300 - 1,400 (Either in 15)
+» Stealth: 21,000 total
+» Loud: 19,000 total]]
+--15 keycard mayhem run: 137250 in 50 minutes
+--done
+prisonnightmare = [[XPM: 2,500 - 2,800+ (high skill ceiling)
+» 14,000 total (XPM: 2,500 in 5:30)
+» +850 per secured bag
+» About 3 minutes per loop]]
+--done
+brooklyn1010 = [[XPM: 2,800 (11 minutes)
+» 26,000 total
+» +1,000 per secured bag (max 4; +4,000)]]
+--6:40 vials/7:30 start elevator (3 power failures)/12:10 elevator/14 escape
+--done I guess
+nomercy = [[XPM: 2,000+ (Loud/Stealth in 14)
+» Stealth: 15,000 for objectives
+» Loud: 7,000 for each saw (2:50 maxed; 2,500 XPM)
+» Both: +13,000 for vial+escape (around 7 minutes)]]
+--done
+brooklynbank = [[XPM: 2,100+ (10 minutes)
+» 16,000 total
+» +400 per bag secured (12 in vault, 12 in boxes; +9,600)]]
+--done
+nightclub = [[XPM: 1,000+ (10 minutes) (2,000+ in 5 on Overkill)
 » 10,000 on stealth escape
 » 8,000 on loud escape
 » 12,000 on loud escape if no C4 was used]]
+--30,000 in 7:45: 3870 (lumberyard escape RNG, rare; only 11 bags? could have been even better?)
+--40,000 in 12: 3333 (escaped as soon as we could with the RNG)
+--done
+whitexmas = [[XPM: 3,300 - 3,800 (leave ASAP), 3,000- (infinite)
+» 8,000 on completion
+» +2,000 per secured bag
+» Max 16 (Overkill) or 18 (Mayhem+) bags spawn initially
+» Endless presents aren't worth it, and the drop rate halves after 20 minutes
+» 3,800 XPM requires RNG for lumber yard escape]]
+--done
+greenbridge = [[XPM: 2,000 - 2,200 (11 to 13 minutes)
+» 24,000 total
+» +1,000 per secured bag (max 4; +4,000)]]
+--Loud 3 is 400 (6.6666 min) second hack
+--we did it in 11 because power box hell
+--for simplicity just call it 9 so they're both 2,700
+--done
+framingframe1 = [[XPM: 2,700 (Stealth in 12, Loud in 14)
 
-santasworkshop = [[XPM: 3,100 - 3,300
-» 4,000 on completion
-» +12,000 - 16,000 on safe event completed
-» +1,000 per finished present (approx. 4 per 2.5 minutes)
-» +1,000 per secured present (none from safe's bags)
-» The best endless heist!]]
-
-stealingxmas = [[XPM: 2,100
+Day 1 XPM: 3,250 (2 minutes)
+» 2,000 on completion (+6,000 for security hack)
+» +500 per painting secured (max 9; +4,500)]]
+framingframe2 = [[Day 2 XPM: 2,100 (3 minutes)
+» 2,000 on completion (+500 per bag secured, max 9; +4,500)]]
+framingframe3 = [[Day 3 XPM: 2,700 (Stealth in 7, Loud in 9)
+» Stealth: 11,500 total (+1,000 per gold secured, max 8; +8,000)
+» Loud: 24,000 total]]
+--time varies
+--done
+stealingxmas = [[XPM: 1,900 - 2,100
 » 4,000 total
 » +4,000 on entering backroom of shoe store (if on objective)
 » +1,000 on entering shoe store storage
@@ -354,92 +284,275 @@ stealingxmas = [[XPM: 2,100
 » +2,800 for toy
 » +6,500 for VR
 » +800 for wine
-» +1,000 per secured non-mission critical loot bag]]
+» +1,000 per additional loot bag (6 jewelry, 3 money; +9,000)]]
+--done enough (didn't test purposely doing extra lures)
+breakinfeds = [[XPM: 2,000+ (5:30 minutes)
+» 7,000 total
+» +4,000 per lure
+» +1,000 per additional bag (4 to 8 in evidence)]]
+--done
+goldengrincasino = [[XPM: 3,900 (Loud in 15, or Stealth in 10)
+» Stealth: 39,250 total
+» Loud (C4 Entry): 44,250 total
+» Loud: 58,250 total (+1,000 for Silent Entry)
+» No additional loot bonus!
+» Get the fireworks going and skylight hacked ASAP!]]
+--day 2: 18500 (3 units) in 8.5 or 9. pretty much 2,100
+--day 1: 20 bags in 10 minutes, 30,000. 3,000 xpm
+--done
+reservoirdogs2 = [[XPM: 2,500
 
-
-
-ukrainianjob = [[XPM: 2,500 (Stealth in 4)
-» 4,000 on completion (under 2 minutes)
-» 10,000 on completion (over 2 minutes)]]
-
---40,000 in 12: 3333
---test getting the lumberyard escape point for a true ASAP leave
---any other escape point requires multiple trips to move all initial bags
-whitexmas = [[XPM: 3,300+ (leave ASAP), 3,000 (infinite)
-» 8,000 on completion
-» +2,000 per secured bag
-» Doesn't get better over time; the initial present spawns are best]]
-
-safehouseraid = [[XPM: 2,600+ (16 minutes)
-» +14,000 per completed wave
-» Waves end based on kill count rather than time? More research needed]]
-
-alaskandeal = [[XPM: 2,200
-» 14,000 total
-» +400 per secured money bag
-» +600 per secured weapon bag]]
-
-diamondheist = [[XPM: 1,700 (Loud, or Stealth in 7)
+Day 2 XPM: 2,100 - 2,300 (7:30 to 10 minutes)
+» 8,000 total
+» +1,500 per storage unit opened (45 seconds; 2,000 XPM)
+» +1,000 per secured bag (max 6; +6,000)]]
+reservoirdogs1 = [[Day 1 XPM: 3,000 (10 minutes)
+» 20,000 total
+» Bags: 10 in vault, 9 in store, 50% for 3 in truck, 25-50% from 3 safes
+» +500 per secured bag (max 19 to 25; +9,500-12,500)]]
+--done
+diamondheist = [[XPM: 1,700 (Loud in 11:30, or Stealth in 7)
 » Stealth: 12,200 total
 » Loud: 19,200 total
 » +2,000 for securing the red diamond]]
-
-whitehouse = [[XPM: 2,000 (Stealth in 15, or Loud in 20)
-» Stealth: 31,000 total
-» Loud: 40,000 total]]
-
-nomercy = [[XPM: 2,000
-» Stealth: 15,000 for objectives
-» Loud: 7,000 for each saw
-» Both: +13,000 for escape]]
-
-hellsisland = [[XPM: 1,600
-» 18,000 total]]
-
-cursedkillroom = [[XPM: 1,200 - 1,500
+--done
+boilingpoint = [[XPM: 2,500 (12 to 18 minutes)
+» 26,000 total
+» +5,000 per scan (about 2 minutes each, max 4)]]
+--45s from safe open to next round
+--done
+cursedkillroom = [[XPM: 2,000+ (2 minutes per loop)
 » 2,000 on completion
-» +1,000 per secured bag]]
+» +1,000 per secured bag (4 per safe; +4,000 each)
+» Safe takes 1 minute; bagging+loop takes 30 sec to a minute
+» Overkill difficulty recommended]]
+--4 bags in 14 min, 5 in 17:15, 7 in 26
+--RNG numbers thanks to the mod Extra Heist Info!
+--averages calculated using this: https://pastebin.com/WXPDEAMa
+--average forced delay = 183 seconds = 3 minutes, but add ingredient adding time + bagging time of 45 seconds
+--done finally?
+rats1 = [[XPM: 3,200 (3 bags in 17:30), 3,000 (7 bags in 32)
 
-holdout = [[XPM: 4,500
-» 135,900 after 9 waves (30 minutes)]]
+Day 1 XPM: 2,700 (on average)
+» 12,000/30,000/70,000 on escape with 0/3/7 bags (about 3:45 each)
+» Prompt check: 25 sec, Chance: 5%+10% each fail, resets to 5% each bag]]
+rats2 = [[Day 2 XPM: 5,000+ (2 minutes, or 1 with no meth)
+» 4,000/6,000/10,000 on escape with no intel/intel/intel + all meth]]
+rats3 = [[Day 3 XPM: 4,500 (3:30 minutes)
+» 2,000 on completion (+14,000 on securing all money)]]
+--done
+firestarter1 = [[XPM: 2,900 (15 minutes)
 
-bordercrossing = [[XPM: 1,300 - 1,400 (Either in 15)
-» Stealth: 21,000 total
-» Loud: 19,000 total]]
-
-bordercrystals = [[XPM: 2,400
-» 1,000 on completion
-» +6,000 per secured bag]]
-
-breakfastintijuana = [[XPM: 2,200 (Loud, or Stealth in 10)
-» Stealth: 22,000 total
-» Loud: 26,000 total]]
-
+Day 1 XPM: 4,000 (All Weapons in 4)
+» 8,000/10,000 on escape with weapon destroyed/no weapons destroyed
+» +6,000 for securing all weapons]]
+firestarter2 = [[Day 2 XPM: 3,000 - 4,000 (Stealth in 2 or 3)
+» 6,000/12,000/10,000 on escape under 3 mins/stealth after 3/loud after 3]]
+firestarter3 = [[Day 3 XPM: 2,000 (8 minutes)
+» 16,000 on completion]]
+--done
+santasworkshop = [[XPM: 3,200+
+» 4,000 on completion
+» +12,000/+16,000 on safe event completed (XPM: 6,000 - 8,000)
+» +1,000 per finished present (approx. 4 per 2:30 minutes)
+» +1,000 per secured present
+» No XP from the safe's bags
+» The best endless heist!]]
 --23500 loud in 20
---30,000 in 15, 6 bags
-bulucsmansion = [[XPM: 1,900 (Stealth in 10)
-» Stealth: 17,000 total (+4,000 for Thermite entry?)
-» Loud: 23,000 total (+2,000 for Car escape?)
-» +500 per secured bag]]
+--31500 in 20, 17 bags, heli escape
+--stealth thermite can be 19,000 or 20,000 or 21,000?
+--stealth boat can be 16,000 or 17,000?
+--there seems to be slight 1,000 xp variance from if you break the objective order a bit re: keycard, looking at office
+--done
+bulucsmansion = [[XPM: 2,000+ (Loud in 15, Stealth in 10)
+» Stealth: 16,000 total (+4,000 for Thermite entry, +1,000 for keycard objective)
+» Loud: 23,000 total (+2,000 for Car escape; not worth it)
+» Bags: 12 in cellar, 1 in garage, 3 safes in house, 5 coke in sanctum
+» +500 per secured bag (max 21; +10,500)]]
+--3,100? We had helicopter water and got 39500 in 15:45. round down to 15 and its still 2,500 XPM
+--plane escape is horrendous but what about default escape, it's available with no wait
+--heli escape with heli: 39500 in 15 = 2,500
+--heli escape with pump: 39500 in 12:30 = 3,100
+--try default escape with sped up water
+--fast pump was done in 6 minutes
+--default escape with pump: 38000 in 9 minutes (8 if we had 4 people), 41000 in 10
+--default escape with heli fill: 38000 in about 12 mins
+--well that ended up taking a lot of attempts
+--done i guess
+thebombforest = [[XPM: 3,100 - 4,100 (Default Escape or Heli+Pump)
+» 38,000 total
+» +1,500 per additional bag (max 1 to 3; +1,500-4,500)
+» Heli water fill is 2:30 slower than the pump
+» Default escape + Ace Pilot recommended, especially with 4 people
+» Demolition 03-G, 13-O, 45-R for pump + close to escape]]
+--33500 in 12 to 13 mins
+--how many bags day 1? it varies so much
+--2 money, 2 weapons, 4 meth ingreds... more in trunks that spawn separately so they arent in wolfhud's count
+--where the hell are the 2 money... bugged? whatever
+--done I guess
+hotlinemiami1 = [[XPM: 2,300 (25 minutes with Drill Upgrades)
 
-sanmartinbank = [[XPM: 2,100 (Loud), 1,500 (Stealth in 10)
-» Stealth: 12,000 - 20,000 total (8,000 from Manager sequence)
-» Loud: 32,000 total (use Vlad entry)]]
+Day 1 XPM: 2,600 (13 minutes)
+» 26,000 total
+» +500 per meth cooked
+» +1,000 per secured bag (around 3 to 6 + meth)]]
+hotlinemiami2 = [[Day 2 XPM: 2,100 (12 minutes)
+» 14,000 total
+» +2,000 for defusing C4 on chair
+» +1,000 per secured bag (max 10 triggers; +10,000)]]
+--done
+thebikerheist1 = [[XPM: 2,800 - 3,400
 
-dragonheist = [[XPM: 2,500 (Stealth in 7), 1,600 (Loud)
-» Stealth: 16,500 total
-» Loud: 15,000 total
-» +1,000 per secured bag]]
+Day 1 XPM: 2,400 - 3,000
+» 14,500 total
+» +7,000 - 18,000 from random objectives
+» +500 per secured bag (5 coke, 4 weapons; +4,500)]]
+thebikerheist2 = [[Day 2 XPM: 5,000+ (2 minutes)
+» 10,500 total
+» +500 per additional bag (max 8, but 4 at helmet are not worth it)]]
+--boat takes 2:30 to re-arrive? 6000 / 2.5 = 2400?
+--done
+watchdogs1 = [[XPM: 2,500 (15:45 minutes)
 
-ukrainianprisoner = [[XPM: 2,800 (Stealth in 15), 2,500 (Loud)
-» Stealth: 41,500 total
-» Loud: 40,000 total
-» Unsure about additional bags]]
+Day 1 XPM: 2,500 (5:45 minutes)
+» 12,000 total
+» +2,000 on helicopter escape
+» +2,000 on securing all bags]]
+watchdogs2 = [[Day 2 XPM: 2,500 (10 minutes)
+» 12,000 total
+» +1,500 per secured bag after #3 (max 9; +13,500)]]
+--14,000 in 12 minutes solo no armor DSOD
+--22,000 13 mins cleaned out
+--22,000 12 mins
+--12 bags 6 mins
+--armor in 8 with 16 triggers seems pretty fair, done
+shadowraid = [[XPM: 2,750+ (16 Bags + Armor in 8)
+» +4,000 on completion without escape timer
+» +6,000 on securing samurai armor
+» +4,000 on securing 3 bags
+» +500 per secured bag (max 16 triggers; +8,000)]]
+--done
+thebombdockyard = [[XPM: 2,000 (Stealth in 9), 1,800+ (Loud in 15)
+» Stealth: 18,000 total
+» Loud: 26,000 total
+» Bags: 25% for 1 or 2 in truck, 75% for each crate (6 Overkill, 10 Mayhem+)
+» +500 per additional bag (max 0 to 12, plus 2 meth)]]
+--loud length? more bags?
+--13 minutes loud for 28000 xp (skipped keycard hack, 11 bags including dragon)
+--27000 in 9:15 playing optimally loud (10 bags)
+--[[loud xp:
+finish keycard hack: 1,000
+forklift keys: 1,000
+enter warehouse: 500
+
+disable gas: +1,000
+open vault: +3,000
+cut the gate: +1,000
+
+stealth xp:
+punch box: 1,000
+use keycard: 2,000
+]]
+--that's enough info, done
+dragonheist = [[XPM: 2,700+ (Loud in 10, Stealth in 7)
+» Stealth: 17,500 total
+» Loud: 16,000 total (+1,000 for disabling gas)
+» Bags: 2 in shop, 4 in showroom, 1 in safe, 3 in crates, 4 in vault
+» +1,000 per additional bag (max 14; +14,000)
+» Stealth until warehouse; keycard in Stealth = 3,000 XP, keycard hack = 1,000 XP
+» Hack the manager's room while drilling, initiate escape driver ASAP, move bags]]
+--done
+thediamond = [[XPM: 2,800 (Loud in 11), 2,000+ (Stealth in 9)
+» Stealth: 17,000 total
+» Loud: 28,000 total
+» The helicopter leaves for 2 minutes every 4 artifacts (2,000 XPM)
+» +1,000 per additional bag (around 13 to 18, only 3 are worth it in Loud)]]
+--fuck panic room, done
+panicroom = [[XPM: 1,500 - 2,000 (15 to 20 minutes)
+» 25,000 total
+» +1,000 for securing toothbrush
+» +500 per secured bag of coke (max 7 to 9; +3,500-4,500)
+» The sniper and roof objectives entirely ruin this heist]]
+--all loot run with competent people? hmm
+-- we got all in 14, 2428 xpm
+meltdown = [[XPM: 2,400+ (Nukes in 9, All in 14)
+» 20,000 total
+» +1,500 per additional bag (max 8; +12,000)
+» +2,000 on securing all additional bags
+» Overkill difficulty recommended (extra crowbar!)]]
+--how long does printing take? is it really that bad?
+--printing seems to take about a minute each but you do have to deal with power outages and such
+--1:30 each might be a fair estimate, but in practice it's almost always 2 minutes
+--done i guess
+counterfeit = [[XPM: 2,500+ (infinite), 1,900 (12 minutes)
+» 21,000 total (+2,000 for defusing the C4)
+» +4,000 per printed bundle of money (1:30 to 2 minutes each)
+» +1,000 per secured bag in the heli cage
+» Printing takes 1 minute, plus refills and power outages]]
+--hmmm its actually pretty good? the safe is too stronk
+--37000 in 12 (one batch, flare, do safe)  - 3,000 XPM
+--52500 in 15 (two fairly clean batches solo) - 3,500 XPM
+--with people: 52000 (3 batches, failed safe) in a painful 21 minutes
+--done, I have no clue how fast this could be with competent players quickly grabbing all 3 ingredient bags needed each time
+labrats = [[XPM: 3,500+ (2 Batches + Safe in 15) (high skill ceiling)
+» 5,000 on completion
+» +15,000/22,500/30,000 on safe event completed (XPM: 7,500 - 15,000!)
+» +15,000 per meth batch cooked + secured
+» No XP from the safe's bags
+» Overkill difficulty recommended]]
+--of course goat sim is the last heist i'm finishing in this
+--overkill "optimal" playthrough
+--day 1: 30000 in 10:45, honestly pretty good but mostly solo, a competent crew could decimate this day
+--day 2: 28500 in 13:45 but I was mostly solo and coulda sawed/C4'd the bridge door so eh 13
+goatsimulator1 = [[XPM: 2,500
+
+Day 1 XPM: 3,000+ (10 minutes) (high skill ceiling)
+» 3,000 on start
+» +1,500 on drill or saw finished/powerbox hacked/each debris removed
+» +19,500/+22,500 for securing the 13/15 goats on Overkill/Mayhem+
+» Overkill difficulty recommended]]
+goatsimulator2 = [[Day 2 XPM: 2,200 (13 minutes)
+» 21,000 total
+» +6,500/+7,500 for securing the 13/15 goats on Overkill/Mayhem+
+» +1,000 per cage
+» +50,000 for Farmer Miserable]]
+
+
+--[[
+02:04:07 AM Lua: [INFO] Loading mod settings : nil 
+(two people joined so subtract a few seconds)
+02:07:25 AM Lua: Base XP added (skm_arena): 8000/8000 (3 minutes passed)
+02:11:14 AM Lua: Base XP added (skm_arena): 9200/17200 (3:50 passed)
+02:14:34 AM Lua: Base XP added (skm_arena): 10600/27800 (3:20)
+02:18:23 AM Lua: Base XP added (skm_arena): 12200/40000 (3:50)
+02:22:16 AM Lua: Base XP added (skm_arena): 14100/54100 (3:50)
+02:25:29 AM Lua: Base XP added (skm_arena): 16300/70400 (3:15)
+02:28:34 AM Lua: Base XP added (skm_arena): 18800/89200 (3:05)
+02:31:42 AM Lua: Base XP added (skm_arena): 21700/110900 (3:08)
+02:34:51 AM Lua: Base XP added (skm_arena): 25000/135900 (3:09)
+]]
+--done
+holdout = [[XPM: 4,500 (9 Waves in 30)
+» 8,000 after 1 wave (3 minutes); XPM: 2,600
+» 40,000 after 4 waves (14 minutes); XPM: 2,800
+» 70,400 after 6 waves (21 minutes); XPM: 3,300
+» 89,200 after 7 waves (24 minutes); XPM: 3,700
+» 110,900 after 8 waves (27 minutes); XPM: 4,100
+» 135,900 after 9 waves (30 minutes); XPM: 4,500
+» Locked to Overkill difficulty, so 10x multiplier
+» The best Loud XPM! Alesso is recommended]]
+
 
 Hooks:Add("LocalizationManagerPostInit", "XPBriefings", function(loc)
 	LocalizationManager:add_localized_strings({
 	
 	menu_filter_xpm = "XPM",
+	
+	heist_escape_street_briefing = escapestreet,
+	heist_escape_park_briefing = escapepark,
+	heist_escape_garage_briefing = escapegarage,
+	heist_escape_overpass_briefing = escapeoverpass,
+	heist_escape_cafe_briefing = escapecafe,
 	
 	heist_mex_crimenet = bordercrossing,
 	heist_mex_briefing = bordercrossing,

@@ -1,7 +1,8 @@
 [
   {
     "ident": "xp-briefings",
-    "version": "1.1",
-    "download_url": "https://github.com/Buurazu/XP-Briefings/raw/main/XP%20Briefings.zip"
+    "version": "1.2",
+    "download_url": "https://github.com/Buurazu/XP-Briefings/raw/main/XP%20Briefings.zip",
+	"patchnotes_url": "https://modworkshop.net/mod/33515#changelog"
   }
 ]
