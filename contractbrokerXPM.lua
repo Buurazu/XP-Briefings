@@ -1,53 +1,51 @@
 table.insert(ContractBrokerGui.tabs,{"menu_filter_xpm","_setup_filter_xpm"})
 
 function ContractBrokerGui:_setup_filter_xpm()
-	self:set_sorting_function(ContractBrokerGui.perform_xpm_sort)
-	
-	--totally irrelevant formula for calculating average length of time to cook a bag in rats / cook off
-	--when i'm modding, it's easier to slap this stuff in a mod and run it in-game than try and execute it on its own
-	--[[rats numbers
-	local startP = 0.05
-	local incP = 0.10
-	local delay = 25]]
-	--[[cookoff numbers
-	local startP = 0.07
-	local incP = 0.15
-	local delay = 22.5 --20 to 25... or is it 21 to 25?
-	
-	local sanitycheck = 0
-	local expectedvalue = 0
-	local baseodds = 1
-	local numdelays = 0
-	
-	for i=startP,2,incP do
-		if (i > 1) then i = 1 end
-		baseodds2 = baseodds
-		numdelays2 = numdelays
-		for j=i,2,incP do
-			if (j > 1) then j = 1 end
-			numdelays2 = numdelays2 + 1
-			baseodds3 = baseodds2
-			numdelays3 = numdelays2
-			for k=j,2,incP do
-				if (k > 1) then k = 1 end
-				--three ingredients added!
-				numdelays3 = numdelays3 + 1
-				local theodds = baseodds3 * i * j * k
-				
-				sanitycheck = sanitycheck + theodds
-				expectedvalue = expectedvalue + theodds * (numdelays3 * delay)
-				log(sanitycheck .. ", " .. expectedvalue)
-				baseodds3 = baseodds3 * (1 - k)
-				if (k == 1) then break end
-			end
-			baseodds2 = baseodds2 * (1 - j)
-			if (j == 1) then break end
-		end
-		baseodds = baseodds * (1 - i)
-		numdelays = numdelays + 1
-		if (i == 1) then break end
+	local tactics = {
+		{
+			"menu_filter_xpm_all"
+		},
+		{
+			"menu_filter_xpm_loud"
+		},
+		{
+			"menu_filter_xpm_stealth"
+		}
+	}
+	local last_y = 0
+	local check_new_job_data = {
+		filter_key = "job",
+		filter_func = ContractBrokerGui.perform_filter_xpm
+	}
+
+	for index, filter in ipairs(tactics) do
+		check_new_job_data.filter_param = index
+		local text = self:_add_filter_button(filter[1], last_y, {
+			check_new_job_data = check_new_job_data,
+			text_macros = filter[2]
+		})
+		last_y = text:bottom() + 1
 	end
-	]]
+
+	self:add_filter("job", ContractBrokerGui.perform_filter_xpm)
+	self:set_sorting_function(ContractBrokerGui.perform_xpm_sort)
+
+end
+
+function ContractBrokerGui:perform_filter_xpm(job_tweak, wrapped_tweak, optional_current_filter)
+	local current_filter = optional_current_filter or self._current_filter or 1
+	local xpm_table = XPBriefingsValues[managers.localization:text(job_tweak.name_id)]
+	
+	XPBriefingsValues["Current Filter"] = current_filter
+	
+	--don't allow heists we don't know yet, unless we're on All
+	if (current_filter == 1) then return true end
+	if (xpm_table == nil) then return false end
+	
+	--if we only gave a single number, then it's loud or stealth
+	if (type(xpm_table) ~= "table") then return true end
+	--our XPM tables are in All, Loud, Stealth format so it's ez to check
+	if (xpm_table[current_filter] ~= 0) then return true else return false end
 end
 
 function ContractBrokerGui.perform_xpm_sort(x, y)
@@ -59,24 +57,18 @@ function ContractBrokerGui.perform_xpm_sort(x, y)
 	local job_tweak_x = tweak_data.narrative:job_data(x.job_id)
 	local job_tweak_y = tweak_data.narrative:job_data(y.job_id)
 	
-	--get our custom XPM briefing message strings
-	local string_x = managers.localization:to_upper_text(job_tweak_x.briefing_id)
-	local string_y = managers.localization:to_upper_text(job_tweak_y.briefing_id)
+	local xpm_x = XPBriefingsValues[managers.localization:text(job_tweak_x.name_id)]
+	local xpm_y = XPBriefingsValues[managers.localization:text(job_tweak_y.name_id)]
+
+	if (type(xpm_x) == "table") then xpm_x = xpm_x[XPBriefingsValues["Current Filter"]] end
+	if (type(xpm_y) == "table") then xpm_y = xpm_y[XPBriefingsValues["Current Filter"]] end
 	
-	--get characters 6 through 10 of the string (#,###)
-	local xpm_x = string_x:sub(6,10)
-	local xpm_y = string_y:sub(6,10)
-	
-	--check if our substring begins with the number 1 through 9
-	local isnumber_x = xpm_x:byte(1) ~= nil and (xpm_x:byte(1) >= 49 and xpm_x:byte(1) <= 57)
-	local isnumber_y = xpm_y:byte(1) ~= nil and (xpm_y:byte(1) >= 49 and xpm_y:byte(1) <= 57)
-	
-	--ideally I make every briefing be a number, but for ones I didn't, or new heists, keep them at the bottom of the list
-	if (not isnumber_x and not isnumber_y) then return ContractBrokerGui.perform_standard_sort(x, y)
-	elseif (not isnumber_x) then return false
-	elseif (not isnumber_y) then return true
+	--place heists without an XPM (custom, or brand new) at the bottom of the list alphabetically
+	if (xpm_x == nil and not xpm_y == nil) then return ContractBrokerGui.perform_standard_sort(x, y)
+	elseif (xpm_x == nil) then return false
+	elseif (xpm_y == nil) then return true
 	--alphabetical order for tied XPMs
 	elseif (xpm_x == xpm_y) then return ContractBrokerGui.perform_standard_sort(x, y)
-	--a simple sort definitely works for any xpm numbers between 1,000 - 9,999, which they should all be
+	--a simple sort
 	else return xpm_x > xpm_y end	
 end
