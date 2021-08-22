@@ -170,8 +170,7 @@ XPBriefingsValues["The Ukrainian Prisoner"] = 2800
 hoxtonbreakout1 = [[XPM: 2,300 (23 minutes)
 
 Day 1 XPM: 2,300 (8 minutes)
-» 18,400 total
-» +200 per cleared obstacle]]
+» 18,400 total]]
 hoxtonbreakout2 = [[Day 2 XPM: 2,300 (15 minutes)
 » 34,000 total
 » +4,000 if no keycard used]]
