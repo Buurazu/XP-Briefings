@@ -55,9 +55,10 @@ XPBriefingsText.cookoff = [[XPM: 2,700
 XPBriefingsValues["Cook Off"] = {2700, 2700, 0}
 --done
 --loud XPM: lets call it 6 minutes
-XPBriefingsText.diamondstore = [[XPM: 5,000+ (Stealth in 4 or less), 3,300 (Loud in 6)
+XPBriefingsText.diamondstore = [[XPM: 5,000+ (Stealth in 4), 3,300 (Loud in 6)
 » 2,000 on completion
-» +1,000 per secured bag (18 in store; +18,000)]]
+» +1,000 per secured bag (18 in store, 0-2 in safes; +18,000-20,000)
+» 10,000 XPM if finished in 2 minutes!]]
 XPBriefingsValues["Diamond Store"] = {5000, 3300, 5000}
 --done
 XPBriefingsText.jewelrystore = [[XPM: 1,700 (Loud in 4:30), 1,300 (Stealth in 4:30)
@@ -173,37 +174,6 @@ XPBriefingsValues["The Yacht Heist"] = {2000, 0, 2000}
 --done
 --only got 33,500 in stealth? had the Keycard warehouse entry (spiking cake is worth much more?)
 --[[
-09:56:52 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by enter warehouse: 46032/46032 (Base XP: 500/500) (enter warehouse)
-09:57:42 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by vlad seen in camera: 368259/414291 (Base XP: 4000/4500)
-09:57:57 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by hack door open: 46034/460325 (Base XP: 500/5000)
-09:58:15 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by warehouse determined: 46032/506357 (Base XP: 500/5500)
-09:58:16 PM Lua: [INFO] [1] Buurazu: C 
-09:58:35 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by warehouse reached: 92065/598422 (Base XP: 1000/6500)
-10:00:23 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_025: 46078/645095 (Base XP: 500/7000)
-10:01:05 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by vlad found: 184313/829408 (Base XP: 2000/9000)
-10:01:08 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by vlad released: 46078/875486 (Base XP: 500/9500)
-
-09:56:52 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_037: 46032/46032 (Base XP: 500/500) (enter warehouse)
-09:57:42 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_035: 368259/414291 (Base XP: 4000/4500) (vlad seen)
-09:57:57 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_033: 46034/460325 (Base XP: 500/5000) (hackdoor)
-09:58:15 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_031: 46032/506357 (Base XP: 500/5500) (warehouse A B or C)
-09:58:16 PM Lua: [INFO] [1] Buurazu: C 
-09:58:35 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_003: 92065/598422 (Base XP: 1000/6500) (warehouse reached)
-10:00:23 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_025: 46078/645095 (Base XP: 500/7000) (keypad input?)
-10:01:05 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_026: 184313/829408 (Base XP: 2000/9000) (vlad found)
-10:01:08 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_028: 46078/875486 (Base XP: 500/9500) (vlad released)
-10:01:14 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_007: 92156/967642 (Base XP: 1000/10500) (adrenaline used)
-10:02:19 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_034: 92157/1059799 (Base XP: 1000/11500) (skid loader anim 3)
-10:02:20 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_041_STEALTH: 276469/1336268 (Base XP: 3000/14500) (left path chosen)
-10:03:26 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_006: 92156/1428424 (Base XP: 1000/15500) (left path: gate door opened)
-10:04:51 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_038: 552939/1981363 (Base XP: 6000/21500) (usb taken)
-10:05:03 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_002: 92156/2073519 (Base XP: 1000/22500) (skid loader anim 6)
-10:05:24 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_041_STEALTH: 92156/2165675 (Base XP: 1000/23500) (left path chosen)
-10:06:35 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_043: 92157/2257832 (Base XP: 1000/24500) (skid loader anim 8)
-10:07:05 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_054: 92156/2349988 (Base XP: 1000/25500) 
-10:10:23 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_055: 184495/2536814 (Base XP: 2000/27500) (jiu feng boat)
-10:11:07 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_053: 184496/2721310 (Base XP: 2000/29500) (boat has arrived)
-10:13:50 PM Lua: [XpNotifier] XP added on The Ukrainian Prisoner by func_experience_008: 368992/3090302 (Base XP: 4000/33500) (escape)
 hanzi pad: 7,500 at warehouse open
 took right path: 18,000 at "steal the documents"
 took right path: 36,000 total
@@ -711,7 +681,25 @@ XPBriefingsText.goatsimulator2 = [[Day 2 XPM: 2,200 (13 minutes)
 » +50,000 for Farmer Miserable on Overkill+]]
 XPBriefingsValues["Goat Simulator"] = {2500, 2500, 0}
 
+--[[
 
+37,500 Stealth in 13 (could have been 12 or less, also could have been 41,500, skipped 8 easy bags)
+36,000 Loud C4 in 12 (could be closer to 11 with multiple people taking out helicopters)
+44,500 Loud in 13:25 (all money bags; slow due to being solo, easy 12 minutes with 4?)
+
+all in all, Stealth is like 3,600 XPM in 11.5 and Loud is like 3,700 XPM in 12 but lets keep it simple
+]]
+
+XPBriefingsText.blackcat = [[XPM: 3,600+ (Either in 12)
+» Use Default Entry; it gives 4,000 XP vs. 500/1,000
+» Stealth: 23,000 - 31,000 total
+» +4,000 for Spa first, +4,000 for bugging Kang
+» 4 minute rushable: kill Deng for keychain, find Kang's number during
+» Loud (No C4): 33,500 total (+500 for Spa first)
+» Loud (C4): 34,000 total; no vault cash = worse overall
+» Bags: 16 vault, 1 Deng's safe, 1 Kang's safe, 4 deal closet
+» +500 per secured bag (max 22; +11,000)]]
+XPBriefingsValues["Black Cat"] = {3600, 3600, 3600}
 --[[
 02:04:07 AM Lua: [INFO] Loading mod settings : nil 
 (two people joined so subtract a few seconds)
@@ -724,6 +712,8 @@ XPBriefingsValues["Goat Simulator"] = {2500, 2500, 0}
 02:28:34 AM Lua: Base XP added (skm_arena): 18800/89200 (3:05)
 02:31:42 AM Lua: Base XP added (skm_arena): 21700/110900 (3:08)
 02:34:51 AM Lua: Base XP added (skm_arena): 25000/135900 (3:09)
+
+1391
 ]]
 --done
 XPBriefingsText.holdout = [[XPM: 4,500 (9 Waves in 30)
@@ -765,6 +755,8 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_chas_briefing = XPBriefingsText.dragonheist,
 	heist_sand_crimenet = XPBriefingsText.ukrainianprisoner,
 	heist_sand_briefing = XPBriefingsText.ukrainianprisoner,
+	heist_chca_crimenet = XPBriefingsText.blackcat,
+	heist_chca_briefing = XPBriefingsText.blackcat,
 	
 	heist_rat_crimenet = XPBriefingsText.cookoff,
 	heist_dark_crimenet = XPBriefingsText.murkystation,

@@ -363,6 +363,22 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	self.jobs.sand.contract_visuals.min_mission_xp = 40000
 	self.jobs.sand.contract_visuals.max_mission_xp = 46500
 	
+	--Black Cat
+	--Note: The C4 objective path can be started at any time before the vault's open,
+	--making a ludicrous potential max XP that I'm not accounting for here
+	--and also making a really funny way to troll loud lobbies. place a C4 right before the code is inputted
+	--Minimum = Stealth; 4 bags required on VH-, 8 bags on OVK/Mayhem, 12 bags on DW+
+	self.jobs.chca.contract_visuals.min_mission_xp = {
+		21500,
+		21500,
+		21500,
+		23500,
+		23500,
+		25500,
+		25500
+	}
+	self.jobs.chca.contract_visuals.max_mission_xp = 45000
+	
 	--No Mercy: Oh, it's below all the others. Both were a bit low (22400, 32000)
 	self.jobs.nmh.contract_visuals.min_mission_xp = 27000
 	self.jobs.nmh.contract_visuals.max_mission_xp = 41000
