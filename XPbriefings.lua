@@ -220,7 +220,7 @@ XPBriefingsText.ukrainianprisoner = [[XPM: 2,900+ (Loud/Cake in 14, Stealth in 1
 » +1,000 for voltage spike (Hanzi or keypad)
 » +2,000 for right path #1
 » No XP for drilling the IT door; stealth start recommended
-» +500 per secured bag (10 in secret area; +5,000)]]
+» +500 per secured bag (10 in secret area, 1 tea; +5,500)]]
 XPBriefingsValues["The Ukrainian Prisoner"] = 2900
 --done
 XPBriefingsText.hoxtonbreakout1 = [[XPM: 2,300 (23 minutes)
@@ -697,9 +697,68 @@ XPBriefingsText.blackcat = [[XPM: 3,600+ (Either in 12)
 » 4 minute rushable: kill Deng for keychain, find Kang's number during
 » Loud (No C4): 33,500 total (+500 for Spa first)
 » Loud (C4): 34,000 total; no vault cash = worse overall
-» Bags: 16 vault, 1 Deng's safe, 1 Kang's safe, 4 deal closet
-» +500 per secured bag (max 22; +11,000)]]
+» Bags: 16 vault, 1 Deng's safe, 1 Kang's safe, 4 deal closet, 1 tea
+» +500 per secured bag (max 23; +11,500)]]
 XPBriefingsValues["Black Cat"] = {3600, 3600, 3600}
+
+--[[
+
+38,000 total in stealth
+05:46:10 AM Lua: [XpNotifier] XP added on Mountain Master by Infiltrate and find the elevators: 82200/82200 (Base XP: 1000/1000)
+05:48:28 AM Lua: [XpNotifier] XP added on Mountain Master by Give the operator security access: 328800/411000 (Base XP: 4000/5000)
+05:48:49 AM Lua: [XpNotifier] XP added on Mountain Master by stealth Call the elevator from the basement: 164400/575400 (Base XP: 2000/7000)
+05:48:57 AM Lua: [XpNotifier] XP added on Mountain Master by stealth Disable power to the elevator: 164400/739800 (Base XP: 2000/9000)
+05:49:27 AM Lua: [XpNotifier] XP added on Mountain Master by Access the elevator shaft: 246600/986400 (Base XP: 3000/12000)
+05:50:09 AM Lua: [XpNotifier] XP added on Mountain Master by Get to the window cleaning lift: 164400/1150800 (Base XP: 2000/14000)
+05:52:30 AM Lua: [INFO] [1] Buurazu: Pocket ECM has started! 
+05:52:36 AM Lua: [INFO] [1] Buurazu: Pocket ECM has ended! 
+05:53:41 AM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 41100/1191900 (Base XP: 500/14500)
+05:53:48 AM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 41100/1233000 (Base XP: 500/15000)
+05:53:55 AM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 41100/1274100 (Base XP: 500/15500)
+05:54:02 AM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 41100/1315200 (Base XP: 500/16000)
+05:54:29 AM Lua: [XpNotifier] XP added on Mountain Master by Find the hidden server room: 246600/1561800 (Base XP: 3000/19000)
+05:54:41 AM Lua: [XpNotifier] XP added on Mountain Master by Find the code and steal the hard drive: 164400/1726200 (Base XP: 2000/21000)
+05:56:10 AM Lua: [XpNotifier] XP added on Mountain Master by Decrypt and secure the drive: 493200/2219400 (Base XP: 6000/27000)
+05:56:33 AM Lua: [XpNotifier] XP added on Mountain Master by Trigger the fire alarm: 82200/2301600 (Base XP: 1000/28000)
+05:58:02 AM Lua: [XpNotifier] XP added on Mountain Master by Assassinate the Triad leader: 328800/2630400 (Base XP: 4000/32000)
+05:58:05 AM Lua: [XpNotifier] XP added on Mountain Master by Secure the gold: 493200/3123600 (Base XP: 6000/38000)
+
+loud:
+10:24:27 PM Lua: [XpNotifier] XP added on Mountain Master by Hack the building's security: 343764/343764 (Base XP: 5000/5000)
+10:24:48 PM Lua: [XpNotifier] XP added on Mountain Master by Call the elevator from the basement: 68752/412516 (Base XP: 1000/6000)
+10:25:32 PM Lua: [XpNotifier] XP added on Mountain Master by Disable power to the elevator: 68753/481269 (Base XP: 1000/7000)
+10:26:41 PM Lua: [XpNotifier] XP added on Mountain Master by Access the elevator shaft: 137506/618775 (Base XP: 2000/9000)
+10:28:32 PM Lua: [XpNotifier] XP added on Mountain Master by Restart the elevator and call it: 137505/756280 (Base XP: 2000/11000)
+10:29:40 PM Lua: [XpNotifier] XP added on Mountain Master by Force open the penthouse door: 137506/893786 (Base XP: 2000/13000)
+10:29:53 PM Lua: [XpNotifier] XP added on Mountain Master by Find the Hidden server room: 137505/1031291 (Base XP: 2000/15000)
+10:32:37 PM Lua: [XpNotifier] XP added on Mountain Master by Steal the hard drive: 550022/1581313 (Base XP: 8000/23000)
+10:33:21 PM Lua: [XpNotifier] XP added on Mountain Master by Get the car into position: 137506/1718819 (Base XP: 2000/25000)
+10:33:55 PM Lua: [XpNotifier] XP added on Mountain Master by Prepare and fuel the car: 68752/1787571 (Base XP: 1000/26000)
+10:34:11 PM Lua: [XpNotifier] XP added on Mountain Master by Find the keys and start the car: 275011/2062582 (Base XP: 4000/30000)
+10:36:05 PM Lua: [XpNotifier] XP added on Mountain Master by Kill the triad leader: 137506/2200088 (Base XP: 2000/32000)
+11:17:41 PM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 34376/2234464 (Base XP: 500/32500)
+11:18:38 PM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 34377/2268841 (Base XP: 500/33000)
+11:18:49 PM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 34376/2303217 (Base XP: 500/33500)
+11:18:58 PM Lua: [XpNotifier] XP added on Mountain Master by Defend the obstruction lights: 275011/2578228 (Base XP: 4000/37500)
+11:19:03 PM Lua: [XpNotifier] XP added on Mountain Master by 500 a bag: 34377/2612605 (Base XP: 500/38000)
+11:19:43 PM Lua: [XpNotifier] XP added on Mountain Master by Secure the Gold: 137505/2750110 (Base XP: 2000/40000)
+11:21:02 PM Lua: [XpNotifier] XP added on Mountain Master by 1000 a bag: 68753/2818863 (Base XP: 1000/41000)
+11:21:09 PM Lua: [XpNotifier] XP added on Mountain Master by 1000 a bag: 68753/2887616 (Base XP: 1000/42000)
+11:21:15 PM Lua: [XpNotifier] XP added on Mountain Master by 1000 a bag: 68752/2956368 (Base XP: 1000/43000)
+11:21:49 PM Lua: [XpNotifier] XP added on Mountain Master by 1000 a bag: 68753/3025121 (Base XP: 1000/44000)
+
+15 minute heist?
+14:08 loud with thermite, no saw/c4 for server door
+14:09 stealth broke at roof (so had to wait for heli)
+so, 12 minute target?
+]]
+XPBriefingsText.mountainmaster = [[XPM: 3,500 (Either in 12)
+» Stealth: 38,000 total
+» Loud: 40,000 total (+1,000 for entering elevator area in Stealth)
+» -2,000 if you use thermite instead of the car
+» +500 for tea/gnome, +1,000 for additional 4 gold (max +5,000)]]
+XPBriefingsValues["Mountain Master"] = {3500, 3500, 3500}
+
 --[[
 02:04:07 AM Lua: [INFO] Loading mod settings : nil 
 (two people joined so subtract a few seconds)
@@ -757,6 +816,8 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_sand_briefing = XPBriefingsText.ukrainianprisoner,
 	heist_chca_crimenet = XPBriefingsText.blackcat,
 	heist_chca_briefing = XPBriefingsText.blackcat,
+	heist_pent_crimenet = XPBriefingsText.mountainmaster,
+	heist_pent_briefing = XPBriefingsText.mountainmaster,
 	
 	heist_rat_crimenet = XPBriefingsText.cookoff,
 	heist_dark_crimenet = XPBriefingsText.murkystation,

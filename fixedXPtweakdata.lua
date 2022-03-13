@@ -360,8 +360,8 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	self.jobs.chas.contract_visuals.max_mission_xp = 31500
 	
 	--Ukrainian Prisoner
-	self.jobs.sand.contract_visuals.min_mission_xp = 40000
-	self.jobs.sand.contract_visuals.max_mission_xp = 46500
+	self.jobs.sand.contract_visuals.min_mission_xp = 31500
+	self.jobs.sand.contract_visuals.max_mission_xp = 47000
 	
 	--Black Cat
 	--Note: The C4 objective path can be started at any time before the vault's open,
@@ -377,7 +377,11 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 		25500,
 		25500
 	}
-	self.jobs.chca.contract_visuals.max_mission_xp = 45000
+	self.jobs.chca.contract_visuals.max_mission_xp = 45500
+	
+	--Mountain Master: Stealth is 36,000 + 4 bags of 500, Loud is 38,000 + 10 bags (gold 5-8 worth 1,000 instead of 500) for 7,000
+	self.jobs.pent.contract_visuals.min_mission_xp = 38000
+	self.jobs.pent.contract_visuals.max_mission_xp = 45000
 	
 	--No Mercy: Oh, it's below all the others. Both were a bit low (22400, 32000)
 	self.jobs.nmh.contract_visuals.min_mission_xp = 27000
