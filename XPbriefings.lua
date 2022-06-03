@@ -67,13 +67,14 @@ XPBriefingsText.jewelrystore = [[XPM: 1,700 (Loud in 4:30), 1,300 (Stealth in 4:
 » 8,000 on completion (loud)]]
 XPBriefingsValues["Jewelry Store"] = {1700, 1700, 1300}
 --done
-XPBriefingsText.transport = [[XPM: 3,500 (C4 in 3:30), 2,400 (no C4 in 5)
-» 12,000 on completion]]
-XPBriefingsValues["Transport: Harbor"] = {3500, 3500, 0}
-XPBriefingsValues["Transport: Park"] = {3500, 3500, 0}
-XPBriefingsValues["Transport: Crossroads"] = {3500, 3500, 0}
-XPBriefingsValues["Transport: Downtown"] = {3500, 3500, 0}
-XPBriefingsValues["Transport: Underpass"] = {3500, 3500, 0}
+XPBriefingsText.transport = [[XPM: 5,000 (C4 in 3:30), 4,000 (no C4 in 5)
+» 12,000 on completion
+» +1,000 per secured bag (6-7 with C4, 9 total; +9,000)]]
+XPBriefingsValues["Transport: Harbor"] = {5000, 5000, 0}
+XPBriefingsValues["Transport: Park"] = {5000, 5000, 0}
+XPBriefingsValues["Transport: Crossroads"] = {5000, 5000, 0}
+XPBriefingsValues["Transport: Downtown"] = {5000, 5000, 0}
+XPBriefingsValues["Transport: Underpass"] = {5000, 5000, 0}
 --4:30 mins per vault loud
 --done
 XPBriefingsText.trainheist = [[XPM: 2,400 (Either in 15)
@@ -147,10 +148,12 @@ XPBriefingsText.gobank = [[XPM: 2,500 - 3,000 (Stealth in 6), 1,800 (Loud in 10)
 » +500 per answered phone call]]
 XPBriefingsValues["GO Bank"] = {2500, 1800, 2500}
 --done
-XPBriefingsText.shacklethorneauction = [[XPM: 3,000 (Loud in 8:30, Stealth in 5)
+--big buff from bag xp update
+XPBriefingsText.shacklethorneauction = [[XPM: 4,000+ (Loud in 8:30, Stealth in 5)
 » Stealth: 15,000 total
-» Loud: 26,000 total]]
-XPBriefingsValues["Shacklethorne Auction"] = 3000
+» Loud: 26,000 total
+» +1,000 per secured bag (36ish artifacts, 1 tablet; +37,000)]]
+XPBriefingsValues["Shacklethorne Auction"] = 4000
 --done
 XPBriefingsText.scarfacemansion = [[XPM: 2,500 (Stealth in 12), 2,000 (Loud in 16)
 » Stealth: 21,000 total
@@ -167,10 +170,11 @@ XPBriefingsText.fourstores = [[XPM: 1,200 - 1,500 (4-5 minutes) (3,400 in 1:45 o
 » 6,000 on completion]]
 XPBriefingsValues["Four Stores"] = 1200
 --done
-XPBriefingsText.theyachtheist = [[XPM: 2,000 (Stealth in 6)
+XPBriefingsText.theyachtheist = [[XPM: 2,300 (Stealth in 6)
 » 4,000 on completion
-» +1,000 per secured money bag (8 required; +8,000)]]
-XPBriefingsValues["The Yacht Heist"] = {2000, 0, 2000}
+» +1,000 per secured money bag (8 required; +8,000)
+» +500 per additional bag (max 7; +3,500)]]
+XPBriefingsValues["The Yacht Heist"] = {2300, 0, 2300}
 --done
 --only got 33,500 in stealth? had the Keycard warehouse entry (spiking cake is worth much more?)
 --[[
@@ -252,10 +256,11 @@ XPBriefingsText.hellsisland = [[XPM: 1,600 (11 minutes)
 » 18,000 total]]
 XPBriefingsValues["Hell's Island"] = {1600, 1600, 0}
 --done
-XPBriefingsText.sanmartinbank = [[XPM: 2,100 (Loud in 15), 1,500 (Stealth in 10)
+XPBriefingsText.sanmartinbank = [[XPM: 2,800 (Loud in 15), 2,200 (Stealth in 10)
 » Stealth: 12,000 - 20,000 total (8,000 from Manager sequence)
-» Loud: 32,000 total (use Vlad entry)]]
-XPBriefingsValues["San Martín Bank"] = {2100, 2100, 1500}
+» Loud: 32,000 total (use Vlad entry)
+» +1,000 per secured bag (10 treasures, 1 egg; +11,000)]]
+XPBriefingsValues["San Martín Bank"] = {2800, 2800, 2200}
 --done
 XPBriefingsText.whitehouse = [[XPM: 2,000 (Stealth in 15, or Loud in 20)
 » Stealth: 31,000 total
@@ -320,10 +325,13 @@ XPBriefingsText.bordercrystals = [[XPM: 2,400
 » 15 sec prompt 1 delay, 45 sec prompt 2 and 3 delay, 15 sec bagging delay]]
 XPBriefingsValues["Border Crystals"] = {2400, 2400, 0}
 --done
-XPBriefingsText.bordercrossing = [[XPM: 1,300 - 1,400 (Either in 15)
+--bag spawns: ??? random due to crates
+--got 27 guaranteed, or 25 guaranteed, 
+XPBriefingsText.bordercrossing = [[XPM: 2,000+ (Either in 15)
 » Stealth: 21,000 total
-» Loud: 19,000 total]]
-XPBriefingsValues["Border Crossing"] = 1300
+» Loud: 19,000 total
+» +500 per secured bag (4 meth, 4 armor, 30+ other; +19,000+)]]
+XPBriefingsValues["Border Crossing"] = 2000
 --15 keycard mayhem run: 137250 in 50 minutes
 --done
 XPBriefingsText.prisonnightmare = [[XPM: 2,500 - 2,800+ (high skill ceiling)
@@ -349,11 +357,12 @@ XPBriefingsText.brooklynbank = [[XPM: 2,100+ (10 minutes)
 » +400 per bag secured (12 in vault, 12 in boxes; +9,600)]]
 XPBriefingsValues["Brooklyn Bank"] = {2100, 2100, 0}
 --done
-XPBriefingsText.nightclub = [[XPM: 1,400 (Loud in 8:30), 1,100 (Stealth in 8:30), 2,100 (Overkill Pick in 5:30)
+XPBriefingsText.nightclub = [[XPM: 2,200 (Loud in 8:30), 2,000 (Stealth in 8:30), 3,000 (Overkill Pick in 5:30)
 » 10,000 on stealth escape
 » 8,000 on loud escape
-» 12,000 on loud escape if no C4 was used]]
-XPBriefingsValues["Nightclub"] = {1400, 1400, 1100}
+» 12,000 on loud escape if no C4 was used
+» +1,000 per bag secured (2-4 money, 0-6 coke; +2,000-10,000)]]
+XPBriefingsValues["Nightclub"] = {2200, 2200, 2000}
 --30,000 in 7:45: 3870 (lumberyard escape RNG, rare; only 11 bags? could have been even better?)
 --40,000 in 12: 3333 (escaped as soon as we could with the RNG)
 --done
@@ -466,16 +475,17 @@ XPBriefingsValues["Rats"] = {3200, 3200, 0}
 --max xp: 108,000 (96,000+12,000 for two escapes) (nah fuck escapes)
 
 --done
-XPBriefingsText.firestarter1 = [[XPM: 2,900 (15 minutes)
+XPBriefingsText.firestarter1 = [[XPM: 3,000 (15 minutes)
 
 Day 1 XPM: 4,000 (All Weapons in 4)
 » 8,000/10,000 on escape with weapon destroyed/no weapons destroyed
 » +6,000 for securing all weapons]]
-XPBriefingsText.firestarter2 = [[Day 2 XPM: 3,000 - 4,000 (Stealth in 2 or 3)
-» 6,000/10,000/12,000 on escape under 3 mins/loud after 3/stealth after 3]]
+XPBriefingsText.firestarter2 = [[Day 2 XPM: 4,000 - 4,500 (Stealth in 2 or 3)
+» 6,000/10,000/12,000 on escape under 3 mins/loud after 3/stealth after 3
+» +1,000 per secured bag (2 server, 1 goat, 0-4 other; +3,000-7,000)]]
 XPBriefingsText.firestarter3 = [[Day 3 XPM: 2,000 (8 minutes)
 » 16,000 on completion]]
-XPBriefingsValues["Firestarter"] = {2900, 2800, 2900}
+XPBriefingsValues["Firestarter"] = {3000, 2900, 3000}
 --done
 XPBriefingsText.santasworkshop = [[XPM: 3,200 - 3,400
 » 4,000 on completion

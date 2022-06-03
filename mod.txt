@@ -3,7 +3,7 @@
 	"description" : "Replaces briefings with XP info and XP Per Minute, adds XPM sort to Contract Broker, fixes Potential Experience",
 	"author" : "Buurazu",
 	"contact" : "Discord: Buurazu#8042",
-	"version" : "1.6",
+	"version" : "1.7",
 	"blt_version" : 2,
 	"image" : "buurazu.png",
 	"color" : "0.8 0 0",

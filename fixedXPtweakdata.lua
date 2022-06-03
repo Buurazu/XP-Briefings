@@ -245,8 +245,8 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	--Stealing Xmas: Original max of 17800; didn't include the 9 additional loot bags?
 	self.jobs.moon.contract_visuals.max_mission_xp = 26800
 	
-	--The Yacht Heist: Original max of 15000; is there something they know that we don't?
-	self.jobs.fish.contract_visuals.max_mission_xp = 12000
+	--The Yacht Heist: Original max of 15000
+	self.jobs.fish.contract_visuals.max_mission_xp = 15500
 	
 	--Panic Room: Normal's minimum was 12,000 for some reason
 	self.jobs.flat.contract_visuals.min_mission_xp = 25000
@@ -334,8 +334,21 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	}
 	
 	--Border Crossing: Yeah, at this point they just copy the same values for every heist...
-	self.jobs.mex.contract_visuals.min_mission_xp = 19000
-	self.jobs.mex.contract_visuals.max_mission_xp = 21000
+	--Loot Bag XP Update: I don't know how many max bags can spawn, especially with crowbar crates being random
+	--I also don't know if difficulty increases the number of bags spawned, and I don't care to check
+	--(Having to do "day 1" to get the bag spawn info sucks)
+	--min = 19,000 + 500 per bag required
+	--max = 21,000 + 500 per bag (I decided to just go with 42, for 21,000. I saw 2 vids that secured 41, and a few that secured 38.)
+	self.jobs.mex.contract_visuals.min_mission_xp = {
+		21000,
+		22000,
+		22000,
+		23000,
+		25000,
+		25000,
+		25000
+	}
+	self.jobs.mex.contract_visuals.max_mission_xp = 42000
 	
 	--Border Crystals: And for some reason, those values are from Diamond Heist of all things
 	--I used 6,000 bags as the basis for the max, like cook off
@@ -343,8 +356,9 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	self.jobs.mex_cooking.contract_visuals.max_mission_xp = 7201000
 	
 	--San Martin Bank: 20,000 is the intended amount from Stealth, but 8,000 from the Manager Objective can be easily skipped
-	self.jobs.bex.contract_visuals.min_mission_xp = 12000
-	self.jobs.bex.contract_visuals.max_mission_xp = 32000
+	--Bag XP update: +4000 to min, +11000 to max
+	self.jobs.bex.contract_visuals.min_mission_xp = 16000
+	self.jobs.bex.contract_visuals.max_mission_xp = 43000
 	
 	--Breakfast in Tijuana: If there's difficulty differences in any of these newer heists, I don't know them
 	--The wiki doesn't have good XP info for these so it's just from Overkill+ testing for XP Briefings
@@ -388,6 +402,70 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	self.jobs.nmh.contract_visuals.max_mission_xp = 41000
 	
 	--Shacklethorne Auction: Also a bit low (11000, 23000)
-	self.jobs.sah.contract_visuals.min_mission_xp = 15000
-	self.jobs.sah.contract_visuals.max_mission_xp = 26000
+	--Bag XP Update: +1000 min, +37000 max
+	self.jobs.sah.contract_visuals.min_mission_xp = 16000
+	self.jobs.sah.contract_visuals.max_mission_xp = 63000
+	
+	
+	--Bag XP Update: Wow, new heists that are inaccurate!
+	self.jobs.nightclub.contract_visuals.min_mission_xp = 10000
+	self.jobs.nightclub.contract_visuals.max_mission_xp = 22000
+	
+	--I know, it's sad
+	self.jobs.firestarter.contract_visuals.min_mission_xp = {
+		31000,
+		31000,
+		31000,
+		31000,
+		32000,
+		32000,
+		32000
+	}
+	--sounds like you possibly could get 16 extra evidence bags; however, 0 is most likely, and 0-4 is more realistic
+	--treating it as 0-4 (+1 goat +2 server)
+	self.jobs.firestarter.contract_visuals.max_mission_xp = {
+		50000,
+		50000,
+		50000,
+		50000,
+		51000,
+		51000,
+		51000
+	}
+	
+	local armoredTransportMin = {
+		14000,
+		15000,
+		16000,
+		17000,
+		17000,
+		17000,
+		17000
+	}
+	local armoredTransportMax = {
+		21000,
+		21000,
+		21000,
+		21000,
+		21000,
+		21000,
+		21000
+	}
+	
+	--Crossroads' trucks apparently have RNG and can have more than 3 bags each... i don't care that much
+	self.jobs.arm_cro.contract_visuals.min_mission_xp = armoredTransportMin
+	self.jobs.arm_cro.contract_visuals.max_mission_xp = armoredTransportMax
+	
+	self.jobs.arm_und.contract_visuals.min_mission_xp = armoredTransportMin
+	self.jobs.arm_und.contract_visuals.max_mission_xp = armoredTransportMax
+	self.jobs.arm_hcm.contract_visuals.min_mission_xp = armoredTransportMin
+	self.jobs.arm_hcm.contract_visuals.max_mission_xp = armoredTransportMax
+	self.jobs.arm_par.contract_visuals.min_mission_xp = armoredTransportMin
+	self.jobs.arm_par.contract_visuals.max_mission_xp = armoredTransportMax
+	self.jobs.arm_fac.contract_visuals.min_mission_xp = armoredTransportMin
+	self.jobs.arm_fac.contract_visuals.max_mission_xp = armoredTransportMax
+	
+	
+	--While checking these old jobs out, I found that they had an experience multiplier that's so out of date that it'd run out at Mayhem. I don't think this is used anymore though, as it's used on job completion, and jobs don't give XP on completion, they give little XP triggers in-heist
+	
 end)
