@@ -442,7 +442,18 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 		17000,
 		17000
 	}
+	-- number of trucks varies between difficulties... details are sparse so whatever, 4 can spawn on overkill, assume 3 on others, no one plays below overkill
 	local armoredTransportMax = {
+		21000,
+		21000,
+		21000,
+		24000,
+		24000,
+		24000,
+		24000
+	}
+	-- park can only have 3 trucks?
+	local parkMax = {
 		21000,
 		21000,
 		21000,
@@ -452,7 +463,7 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 		21000
 	}
 	
-	--Crossroads' trucks apparently have RNG and can have more than 3 bags each... i don't care that much
+	--Crossroads' trucks apparently have RNG and can have more than 3 bags each... i don't care to test it
 	self.jobs.arm_cro.contract_visuals.min_mission_xp = armoredTransportMin
 	self.jobs.arm_cro.contract_visuals.max_mission_xp = armoredTransportMax
 	
@@ -461,11 +472,26 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	self.jobs.arm_hcm.contract_visuals.min_mission_xp = armoredTransportMin
 	self.jobs.arm_hcm.contract_visuals.max_mission_xp = armoredTransportMax
 	self.jobs.arm_par.contract_visuals.min_mission_xp = armoredTransportMin
-	self.jobs.arm_par.contract_visuals.max_mission_xp = armoredTransportMax
+	self.jobs.arm_par.contract_visuals.max_mission_xp = parkMax
 	self.jobs.arm_fac.contract_visuals.min_mission_xp = armoredTransportMin
 	self.jobs.arm_fac.contract_visuals.max_mission_xp = armoredTransportMax
 	
 	
 	--While checking these old jobs out, I found that they had an experience multiplier that's so out of date that it'd run out at Mayhem. I don't think this is used anymore though, as it's used on job completion, and jobs don't give XP on completion, they give little XP triggers in-heist
+	
+	--Midland Ranch
+	--Only 6 bags needed on VH-
+	self.jobs.ranc.contract_visuals.min_mission_xp = {
+		28000,
+		28000,
+		28000,
+		30000,
+		30000,
+		30000,
+		30000
+	}
+	--Imma be real with you, I have no clue how many max bags there are. 12 with the asset?
+	-- +2,000 for assembling the cage
+	self.jobs.ranc.contract_visuals.max_mission_xp = 36000
 	
 end)

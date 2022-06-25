@@ -69,9 +69,14 @@ XPBriefingsValues["Jewelry Store"] = {1700, 1700, 1300}
 --done
 XPBriefingsText.transport = [[XPM: 5,000 (C4 in 3:30), 4,000 (no C4 in 5)
 » 12,000 on completion
-» +1,000 per secured bag (6-7 with C4, 9 total; +9,000)]]
+» +1,000 per secured bag (6-7 with C4, max 9-12)]]
+-- park has max 3 trucks?
+XPBriefingsText.transportpark = [[XPM: 5,000 (C4 in 3:30), 4,000 (no C4 in 5)
+» 12,000 on completion
+» +1,000 per secured bag (6-7 with C4, max 9)]]
 XPBriefingsValues["Transport: Harbor"] = {5000, 5000, 0}
 XPBriefingsValues["Transport: Park"] = {5000, 5000, 0}
+-- technically crossroad's trucks can have more than 3 bags each apparently, but I don't care to test it
 XPBriefingsValues["Transport: Crossroads"] = {5000, 5000, 0}
 XPBriefingsValues["Transport: Downtown"] = {5000, 5000, 0}
 XPBriefingsValues["Transport: Underpass"] = {5000, 5000, 0}
@@ -770,6 +775,34 @@ XPBriefingsText.mountainmaster = [[XPM: 3,500 (Either in 12)
 XPBriefingsValues["Mountain Master"] = {3500, 3500, 3500}
 
 --[[
+ranch heist
+1000 XP enter house
+2000 XP laptop turned on
+(4000 bug success?)
+1000 XP approach barn RFID
+1000 XP cut successful
+(2000 first weapon construct?)
+1000 XP per bag?
+7000 for 8 bags in
+
+7000 total xp after laptop after killing the guy
+
+Stealth minimum overkill: 30,000?
+30,000 on death sentence too doing it in the other order with keycard instead of keycode
+32,000 in loud? 30,000 with stealth beginning
+30,000 either direction I go, I don't know why I got 32,000 before; assembling the cage?
+
+how long? 18 to 20 mins stealth
+10 to 12 minutes loud clean?
+]]
+XPBriefingsText.midlandranch = [[XPM: 3,000 (Loud in 10), 2,000 (Stealth in 15)
+» 22,000 total
+» +2,000 for assembling the cage asset
+» +1,000 per secured bag]]
+XPBriefingsValues["Midland Ranch"] = {3000, 3000, 2000}
+
+
+--[[
 02:04:07 AM Lua: [INFO] Loading mod settings : nil 
 (two people joined so subtract a few seconds)
 02:07:25 AM Lua: Base XP added (skm_arena): 8000/8000 (3 minutes passed)
@@ -828,6 +861,8 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_chca_briefing = XPBriefingsText.blackcat,
 	heist_pent_crimenet = XPBriefingsText.mountainmaster,
 	heist_pent_briefing = XPBriefingsText.mountainmaster,
+	heist_ranc_crimenet = XPBriefingsText.midlandranch,
+	heist_ranc_briefing = XPBriefingsText.midlandranch,
 	
 	heist_rat_crimenet = XPBriefingsText.cookoff,
 	heist_dark_crimenet = XPBriefingsText.murkystation,
@@ -837,7 +872,7 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_chill_combat_crimenet = XPBriefingsText.safehouseraid,
 	heist_alex_3_briefing = XPBriefingsText.rats3,
 	heist_gallery_briefing = XPBriefingsText.artgallery,
-	heist_arm_par_briefing = XPBriefingsText.transport,
+	heist_arm_par_briefing = XPBriefingsText.transportpark,
 	heist_moon_hl_briefing = XPBriefingsText.stealingxmas,
 	heist_jewelry_store_crimenet = XPBriefingsText.jewelrystore,
 	heist_crojob2_briefing = XPBriefingsText.thebombdockyard,
@@ -890,7 +925,7 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_arm_hcm_crimenet = XPBriefingsText.transport,
 	heist_bph_briefing = XPBriefingsText.hellsisland,
 	heist_moon_crimenet = XPBriefingsText.stealingxmas,
-	heist_arm_par_crimenet = XPBriefingsText.transport,
+	heist_arm_par_crimenet = XPBriefingsText.transportpark,
 	heist_crojob2_crimenet = XPBriefingsText.thebombforest,
 	heist_watchdogs_1_briefing = XPBriefingsText.watchdogs1,
 	heist_crojob1_crimenet = XPBriefingsText.thebombdockyard,
@@ -998,7 +1033,6 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_help_hl_briefing = XPBriefingsText.prisonnightmare,
 	menu_skirmish_selected_briefing = XPBriefingsText.holdout,
 	heist_skm_random_briefing = XPBriefingsText.holdout,
-	
 	
 	})
 end)
