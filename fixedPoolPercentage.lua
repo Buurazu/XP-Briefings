@@ -30,7 +30,8 @@ elseif RequiredScript == "lib/managers/experiencemanager" then
 		if XPBriefings_inContractGui then
 			-- behave normally when under level 100
 			if self:level_cap() > self:current_level() then return false end
-			-- pretend to not be at the cap when infamous and under infamy 500
+			-- pretend to not be at the cap when infamous and under infamy 500 with unfilled pool
+			if self:get_current_prestige_xp() == self:get_max_prestige_xp() then return true end
 			if self:current_rank() > 0 and self:current_rank() < tweak_data.infamy.ranks then return false end
 			return true
 		end
