@@ -494,4 +494,33 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 	-- +2,000 for assembling the cage
 	self.jobs.ranc.contract_visuals.max_mission_xp = 36000
 	
+	-- Lost in Transit
+	-- 6 bags on Normal to Overkill, 9 on Mayhem+
+	self.jobs.trai.contract_visuals.min_mission_xp = {
+		26500,
+		26500,
+		26500,
+		26500,
+		27250,
+		27250,
+		27250
+	}
+	
+	--[[
+	
+	Max bags: On Overkill, non-company trains have 2 bags inside instead of 3
+	4 under-trains, 9 trains (3 for each company) always? so additional Overkill xp is 20*250, mayhem xp is 26*250
+	
+	]]
+	self.jobs.trai.contract_visuals.max_mission_xp = {
+		31500,
+		31500,
+		31500,
+		31500,
+		33750,
+		33750,
+		33750
+	}
+	
+	
 end)

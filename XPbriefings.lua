@@ -633,13 +633,13 @@ not related to not doing the puzzle:
 05:02:56 AM Lua: [XpNotifier] XP added on The Diamond by loud_escape: 431340/2444260 (Base XP: 6000/34000)
 
 might be a glitch with bots entering the escape zone with you?
+» The 6,000 XP on Loud Escape can trigger multiple times playing solo?
 ]]
 XPBriefingsText.thediamond = [[XPM: 2,800 (Loud in 11), 2,000+ (Stealth in 9)
 » Stealth: 17,000 total
 » Loud: 24,000 total (+4,000 for completing the puzzle)
 » The helicopter leaves for 2 minutes every 4 artifacts (2,000 XPM)
-» +1,000 per additional bag (around 13 to 18, only 3 are worth it in Loud)
-» The 6,000 XP on Loud Escape can trigger multiple times playing solo?]]
+» +1,000 per additional bag (around 13 to 18, only 3 are worth it in Loud)]]
 XPBriefingsValues["The Diamond"] = {2800, 2800, 2000}
 --fuck panic room, done
 XPBriefingsText.panicroom = [[XPM: 1,500 - 2,000 (15 to 20 minutes)
@@ -801,6 +801,12 @@ XPBriefingsText.midlandranch = [[XPM: 3,000 (Loud in 10), 2,000 (Stealth in 15)
 » +1,000 per secured bag]]
 XPBriefingsValues["Midland Ranch"] = {3000, 3000, 2000}
 
+XPBriefingsText.lostintransit = [[XPM: 2,750+ (Either in 10)
+» 25,000 total
+» Use Stealth start or C4/Saw to get into the office
+» 4 undersides with 2 bags, 9 trains with 3 bags (2 on Overkill)
+» +250 per secured bag (max 26/35; +6,500/8,750)]]
+XPBriefingsValues["Lost in Transit"] = 2750
 
 --[[
 02:04:07 AM Lua: [INFO] Loading mod settings : nil 
@@ -863,6 +869,8 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_pent_briefing = XPBriefingsText.mountainmaster,
 	heist_ranc_crimenet = XPBriefingsText.midlandranch,
 	heist_ranc_briefing = XPBriefingsText.midlandranch,
+	heist_trai_crimenet = XPBriefingsText.lostintransit,
+	heist_trai_briefing = XPBriefingsText.lostintransit,
 	
 	heist_rat_crimenet = XPBriefingsText.cookoff,
 	heist_dark_crimenet = XPBriefingsText.murkystation,
