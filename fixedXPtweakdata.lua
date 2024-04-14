@@ -522,5 +522,17 @@ Hooks:PostHook(NarrativeTweakData, "init", "fixXP_NarrativeTweakData_init", func
 		33750
 	}
 	
+	--[[
+	Hostile Takeover
+	minimum: 23,500; maximum: 34,500
+	20,000 for 4 objectives; escape is 1,000 or 2,000; 25 bags of 500 xp (5 required)
+	
+	]]
+	self.jobs.corp.contract_visuals.min_mission_xp = 23500
+	self.jobs.corp.contract_visuals.max_mission_xp = 34500
+	
+	--Crude Awakening: easy, 33,000 for finishing and 8 optional bags
+	self.jobs.deep.contract_visuals.min_mission_xp = 33000
+	self.jobs.deep.contract_visuals.max_mission_xp = 41000
 	
 end)

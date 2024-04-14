@@ -809,6 +809,39 @@ XPBriefingsText.lostintransit = [[XPM: 2,750+ (Either in 10)
 XPBriefingsValues["Lost in Transit"] = 2750
 
 --[[
+
+Stealth: 5K for each of the four main objectives (destroy microscopes, deliver research, get blackmail, get prototype)
+1,000 on escape; 2,000 on escape having skipped the guys driving up?
++500 per bag; 5 are required (4 research and prototype); cocaine, painting, and 2 more research available
+6 bags from wine preplan
+
+made it out with 25 bags; 11 paintings, 1 coke, 6 research, 6 wine, 1 prototype
+
+minimum: 23,500; maximum: 34,500
+
+
+
+Time it takes varies greatly in solo compared to a knowledgeable team, since the objectives are so doable together
+
+]]
+XPBriefingsText.hostiletakeover = [[XPM: 2,500+ (Either in 10)
+» 21,000 total (1,000 on escape, 5,000 from the four objectives)
+» +1,000 on escape if no investigators/turret
+» Bags: 1 prototype, 1 coke, 6 documents, 6 wine (if preplanned), 11 paintings
+» +500 per secured bag (max 25; +12,500)
+» With the 4 objectives doable simultaneously, solo XPM is much worse]]
+XPBriefingsValues["Hostile Takeover"] = 2500
+
+
+-- man I don't care about payday 2 anymore
+-- 15 minutes? idk
+
+XPBriefingsText.crudeawakening = [[XPM: 2,200 (Either in 15)
+» 33,000 total
+» +1,000 per secured bag (max 8 (4 without asset); +8,000)]]
+XPBriefingsValues["Crude Awakening"] = 2200
+
+--[[
 02:04:07 AM Lua: [INFO] Loading mod settings : nil 
 (two people joined so subtract a few seconds)
 02:07:25 AM Lua: Base XP added (skm_arena): 8000/8000 (3 minutes passed)
@@ -871,6 +904,10 @@ Hooks:Add("LocalizationManagerPostInit", "XPBriefings_init", function(loc)
 	heist_ranc_briefing = XPBriefingsText.midlandranch,
 	heist_trai_crimenet = XPBriefingsText.lostintransit,
 	heist_trai_briefing = XPBriefingsText.lostintransit,
+	heist_corp_crimenet = XPBriefingsText.hostiletakeover,
+	heist_corp_briefing = XPBriefingsText.hostiletakeover,
+	heist_deep_crimenet = XPBriefingsText.crudeawakening,
+	heist_deep_briefing = XPBriefingsText.crudeawakening,
 	
 	heist_rat_crimenet = XPBriefingsText.cookoff,
 	heist_dark_crimenet = XPBriefingsText.murkystation,
